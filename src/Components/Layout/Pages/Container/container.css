@@ -1,0 +1,43 @@
+h2 {
+  font-size: 12px;
+  text-align: center;
+}
+
+.brandImg h1 {
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.brandImg {
+  padding: 50px 0;
+}
+
+.serviceText {
+  font-size: 10px;
+  text-align: center;
+}
+
+.brandImg img {
+  height: 150px;
+  width: 100%;
+}
+
+.brandImg .logoImg {
+  height: 90px;
+  border-radius: 50%;
+}
+
+.imgSuppliers img {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 40%;
+}
+
+/*# sourceMappingURL=container.css.map */
