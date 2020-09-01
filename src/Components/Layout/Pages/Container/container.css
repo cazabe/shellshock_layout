@@ -1,5 +1,5 @@
 h2 {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -7,17 +7,12 @@ h2 {
   text-align: center;
 }
 
-h1{
-  text-align: center;
-  padding: 20px 0;
-}
-
 .brandImg {
   padding: 50px 0;
 }
 
 .serviceText {
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -28,6 +23,7 @@ h1{
 
 .brandImg .logoImg {
   height: 90px;
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -38,6 +34,17 @@ h1{
   margin-right: auto;
   width: 50%;
   border-radius: 40%;
+}
+
+.progress-bar-item {
+  padding: 0 1em 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+progress {
+  height: 45px;
+  width: 80%;
 }
 
 /*# sourceMappingURL=container.css.map */

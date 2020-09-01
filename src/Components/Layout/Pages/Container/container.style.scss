@@ -1,7 +1,7 @@
 $paddings:50px 0;
 $positionText:center;
-$fontSizeSub: 12px;
-$fontSizeText:10px;
+$fontSizeSub: 16px;
+$fontSizeText:14px;
 
 h2{
     font-size: $fontSizeSub;
@@ -41,6 +41,17 @@ h2{
     margin-right: auto;
     width: 50%;
     border-radius: 40%;
+}
+
+.progress-bar-item{
+    padding: 0 1em 1em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+progress{
+    height: 45px;
+    width: 80%;
 }
 
 
