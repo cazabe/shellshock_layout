@@ -1,4 +1,5 @@
 import React from "react";
+import logoTagExpress from "../../../Assets/logo-tag-express.png";
 import "./footer.style.css";
 
 const FooterComponent = () => {
@@ -7,11 +8,11 @@ const FooterComponent = () => {
     <footer className="footer-distributed">
       <div className="footer-left">
         <img
-          src=""
-          alt="logo Barriio lindo"
+          src={logoTagExpress}
+          alt="logo TagExpress"
         />
         <h3>
-          TAG<span>EXPRESS</span>
+          AYUDANDO A<span> MOVILIZARTE</span>
         </h3>
       </div>
       <div className="footer-center">

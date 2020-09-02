@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import logoTaxExpress from "../../../Assets/logo-tag-express.png";
+import "./nav.style.css";
 import {
     Collapse,
     Navbar,
@@ -7,10 +9,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
     NavbarText,
   } from 'reactstrap';
 
@@ -22,88 +20,28 @@ const NavComponent = ()=>{
 return(
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Logo</NavbarBrand>
+        <NavbarBrand href="/"><img  className="logoNav" src={logoTaxExpress} alt="logo"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-          <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Participation
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="/components/">Pricing</NavLink>
+              <NavLink href="#contacto">Contacto</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                New and Events
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                About
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="/components/">Rapid Suplier Connect</NavLink>
+              <NavLink href="#puntosVentas">Puntos de ventas</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                FAQ
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="#nosotros">Nosotros</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#rfid">Tag rfid</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#preguntas">Preguntas frecuentes</NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText>Sign In</NavbarText>
+          <NavbarText>LOGIN</NavbarText>
           <div className="demo">
-          <NavbarText>Request Demo</NavbarText>
           </div>
         </Collapse>
       </Navbar>
