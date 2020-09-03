@@ -3,3 +3,14 @@ $heightLogo : 35px;
 .logoNav{
     height:$heightLogo;
 }
+
+.loginNavItem{
+    color: rgba(0,0,0,.5);
+    list-style: none;
+}
+
+.loginIcon{
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}

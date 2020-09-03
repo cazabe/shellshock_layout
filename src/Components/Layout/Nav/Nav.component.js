@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import logoTaxExpress from "../../../Assets/logo-tag-express.png";
+import loginIcon from "../../../Assets/login.png";
 import "./nav.style.css";
 import {
     Collapse,
@@ -9,7 +10,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    NavbarText,
   } from 'reactstrap';
 
 const NavComponent = ()=>{
@@ -19,7 +19,7 @@ const NavComponent = ()=>{
 
 return(
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar className="navTagexpress" color="light" light expand="md">
         <NavbarBrand href="/"><img  className="logoNav" src={logoTaxExpress} alt="logo"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -40,9 +40,9 @@ return(
               <NavLink href="#preguntas">Preguntas frecuentes</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>LOGIN</NavbarText>
-          <div className="demo">
-          </div>
+          <NavItem className="loginNavItem">
+              <NavLink href="#login"><img className="loginIcon" src={loginIcon}/><strong>Login</strong></NavLink>
+          </NavItem>
         </Collapse>
       </Navbar>
     </div>

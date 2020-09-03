@@ -3,6 +3,12 @@ h2 {
   text-align: center;
 }
 
+h5 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .brandImg h1 {
   text-align: center;
 }
@@ -45,6 +51,17 @@ h2 {
 progress {
   height: 45px;
   width: 80%;
+}
+
+.subtitle_section {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 40px;
+}
+
+.txtFAQ {
+  text-align: center;
 }
 
 /*# sourceMappingURL=container.css.map */

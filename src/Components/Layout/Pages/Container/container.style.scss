@@ -2,10 +2,17 @@ $paddings:50px 0;
 $positionText:center;
 $fontSizeSub: 16px;
 $fontSizeText:14px;
+$titleSize:30px;
 
 h2{
     font-size: $fontSizeSub;
     text-align: $positionText;
+}
+
+h5{
+    text-align: $positionText;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .brandImg h1{
@@ -52,6 +59,17 @@ h2{
 progress{
     height: 45px;
     width: 80%;
+}
+
+.subtitle_section{
+    text-align:$positionText;
+    font-size:$titleSize;
+    text-transform: uppercase;
+    padding:40px;
+}
+
+.txtFAQ{
+    text-align: center;
 }
 
 
