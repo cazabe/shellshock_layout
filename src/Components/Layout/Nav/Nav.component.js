@@ -1,26 +1,31 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import logoTaxExpress from "../../../Assets/logo-tag-express.png";
 import loginIcon from "../../../Assets/login.png";
+import { Link } from "react-router-dom";
 import "./nav.style.css";
 import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-  } from 'reactstrap';
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 
-const NavComponent = ()=>{
-    
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
+const NavComponent = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
-return(
+  return (
     <div>
       <Navbar className="navTagexpress" color="light" light expand="md">
-        <NavbarBrand href="/"><img  className="logoNav" src={logoTaxExpress} alt="logo"/></NavbarBrand>
+        
+        <NavbarBrand>
+        <Link to="/">
+          <img className="logoNav" src={logoTaxExpress} alt="logo" />
+          </Link>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -41,15 +46,25 @@ return(
             </NavItem>
           </Nav>
           <NavItem className="loginNavItem">
-              <NavLink href="#login"><img className="loginIcon" src={loginIcon}/><strong>Abrir cuenta</strong></NavLink>
+            <Link to="/register">
+              <NavLink>
+                <img className="loginIcon" src={loginIcon} />
+                <strong className="loginNavItem">Abrir cuenta</strong>
+              </NavLink>
+            </Link>
           </NavItem>
           <NavItem className="loginNavItem">
-              <NavLink href="#login"><img className="loginIcon" src={loginIcon}/><strong>Acceso clientes</strong></NavLink>
+            <Link to="/login">
+              <NavLink>
+                <img className="loginIcon" src={loginIcon} />
+                <strong className="loginNavItem">Acceso clientes</strong>
+              </NavLink>
+            </Link>
           </NavItem>
         </Collapse>
       </Navbar>
     </div>
-)
-}
+  );
+};
 
 export default NavComponent;

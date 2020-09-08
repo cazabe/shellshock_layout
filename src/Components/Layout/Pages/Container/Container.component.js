@@ -1,4 +1,5 @@
 import React from "react";
+import HeroImg from "../heroImage/Hero.component";
 import {
   Container,
   Row,
@@ -10,15 +11,19 @@ import {
 } from "reactstrap";
 import "./container.css";
 import SupplierImage from "../../../../Assets/hero.jpg";
+import quienesSomos from "../../../../Assets/quienesSomos.jpg";
+import oficinaTag from "../../../../Assets/oficinaTag.jpeg";
 
 const ContainerComponent = () => {
   
   return (
+    <>
+    <HeroImg/>
     <Container>
       <h1 className="subtitle_section">NOSOTROS</h1>
       <Row md="12" className="brandImg" id="nosotros">
         <Col sm="6">
-          <img src={SupplierImage} alt="Suppliers"></img>
+          <img className="quienesSomos" src={quienesSomos} alt="Suppliers"></img>
           <h5>QUIENES SOMOS</h5>
           <p className="serviceText">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -58,7 +63,7 @@ const ContainerComponent = () => {
       </div>
       <Row md="12" className="brandImg" id="puntosVentas">
         <Col sm="4">
-          <img src={SupplierImage} alt="Suppliers"></img>
+          <img src={oficinaTag} alt="Suppliers"></img>
           <div>
           <h5>AUTOPISTA GENERAL RUMIÑAHUI</h5>
           </div>
@@ -94,9 +99,7 @@ const ContainerComponent = () => {
 
       <section>
         <h2 className="subtitle_section">GRACIAS A NUESTRA GESTIÓN</h2>
-        <p className="serviceText">
-          Siempre intentamos sastifacer las necesidades de neustros clientes
-        </p>
+  
         <Row md="12" className="brandImg">
           <Col sm="4">
           <div className="numbersText">100%</div>
@@ -174,7 +177,7 @@ const ContainerComponent = () => {
             <strong>¿EL VALOR DEL DISPOSITIVO INCLUYE RECARGA? </strong>
             </ListGroupItemHeading>
             <ListGroupItemText className="txtFAQ">
-              No, las regacargas se deben realizar aparte. El valor de los 7$ es solo por el dispositivo.
+              No, las regacargas se deben realizar a parte. El valor de los 7$ es solo por el dispositivo.
             </ListGroupItemText>
           </ListGroupItem>
 
@@ -183,7 +186,7 @@ const ContainerComponent = () => {
              <strong>¿POR CUALES PEAJES PUEDO CIRCULAR CON ESTE DISPOSITIVO?</strong>
             </ListGroupItemHeading>
             <ListGroupItemText className="txtFAQ">
-              Puede usarlo para todos los peajes a nivel nacionl siempre y cuando el mismo esté
+              Puede usarlo para todos los peajes a nivel nacional siempre y cuando el mismo esté
               homologado en las distintas concesiones viales.
             </ListGroupItemText>
           </ListGroupItem>
@@ -193,13 +196,14 @@ const ContainerComponent = () => {
               <strong>¿COMO HOMOLOGO UN DISPOSITIVO?</strong> 
             </ListGroupItemHeading>
             <ListGroupItemText className="txtFAQ">
-              Debe acercarce una solo vez a las oficinas de las concesiones donde decea homologar y ahí
+              Debe acercarse una solo vez a las oficinas de las concesiones donde desea homologar y ahí
               solicitar homologación del dispositivo.
             </ListGroupItemText>
           </ListGroupItem>
         </ListGroup>
       </section>
     </Container>
+    </>
   );
 };
 
