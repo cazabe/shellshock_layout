@@ -15,21 +15,21 @@ const FooterComponent = () => {
       </div>
       <div className="footer-center">
         <div style={{ padding: "5px" }}>
-          <i className="fa fa-map-marker"></i>
+          <i style={{ padding: "0px" }} className="fa fa-map-marker"></i>
           <p>Autopista General Rumiñahui</p>
+          </div>
           <div style={{ padding: "5px" }}>
-            <i className="fa fa-phone"></i>
+            <i style={{ padding: "0px" }} className="fa fa-phone"></i>
             <p>0981218994</p>
           </div>
           <div style={{ padding: "5px" }}>
-            <i className="fa fa-envelope"></i>
+            <i style={{ padding: "0px" }} className="fa fa-envelope"></i>
             <p>
               <a href="mailto:support@eduonix.com">
                 servicioalclientecalprandina@tagexpress.club
               </a>
             </p>
           </div>
-        </div>
       </div>
       <div className="footer-right">
       <div style={{padding:"60px"}}>

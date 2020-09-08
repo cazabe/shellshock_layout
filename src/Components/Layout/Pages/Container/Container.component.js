@@ -12,6 +12,7 @@ import "./container.css";
 import SupplierImage from "../../../../Assets/hero.jpg";
 
 const ContainerComponent = () => {
+  
   return (
     <Container>
       <h1 className="subtitle_section">NOSOTROS</h1>
@@ -97,36 +98,17 @@ const ContainerComponent = () => {
           Siempre intentamos sastifacer las necesidades de neustros clientes
         </p>
         <Row md="12" className="brandImg">
-          <Col sm="6">
-            <div className="progress-bar-item">
-              <h2>
-                <strong>Clientes satisfechos</strong>
-              </h2>
-            </div>
-            <div className="progress-bar-item">
-              <h2>
-                <strong>Tags vendidos</strong>
-              </h2>
-            </div>
-            <div className="progress-bar-item">
-              <h2>
-                <strong>Recargas realizadas</strong>
-              </h2>
-            </div>
+          <Col sm="4">
+          <div className="numbersText">100%</div>
+					<h3>Clientes satisfechos</h3>
           </Col>
-          <Col sm="6">
-            <span>90%</span>
-            <div id="skills" className="progress-bar-item">
-              <progress value="90" max="100"></progress>
-            </div>
-            <span>90%</span>
-            <div id="skills" className="progress-bar-item">
-              <progress value="90" max="100"></progress>
-            </div>
-            <span>90%</span>
-            <div id="skills" className="progress-bar-item">
-              <progress value="90" max="100"></progress>
-            </div>
+          <Col sm="4">
+          <div className="numbersText">60.000 +</div>
+					<h3>Tags vendidos</h3>
+          </Col>
+          <Col sm="4">
+          <div className="numbersText">20.000 +</div>
+					<h3>Recargas realizadas</h3>
           </Col>
         </Row>
       </section>
@@ -139,19 +121,19 @@ const ContainerComponent = () => {
               <h2>
                 <strong>Dirección:</strong>
               </h2>
-              <p>Junto a las oficinas del peaje Autopista General Rumiñahui</p>
+              <p className="serviceText">Junto a las oficinas del peaje Autopista General Rumiñahui</p>
             </div>
             <div className="progress-bar-item">
               <h2>
                 <strong>Télefonos:</strong>
               </h2>
-              <p>0967879065</p>
+              <p className="serviceText">0967879065</p>
             </div>
             <div className="progress-bar-item">
               <h2>
                 <strong>Correo:</strong>
               </h2>
-              <p>tagexpress.Ecuador@gmail.com</p>
+              <p className="serviceText">servicioalclientecalprandina@tagexpress.club</p>
             </div>
           </Col>
           <Col sm="6">
@@ -178,7 +160,7 @@ const ContainerComponent = () => {
       <section id="preguntas">
         <h1 className="subtitle_section">PREGUNTAS FRECUENTES</h1>
         <ListGroup>
-          <ListGroupItem color="success">
+          <ListGroupItem className="colorNumber1" >
             <ListGroupItemHeading>
             <strong>¿CUAL ES EL VALOR DEL DISPOSITIVO?</strong>
             </ListGroupItemHeading>
@@ -187,7 +169,7 @@ const ContainerComponent = () => {
             </ListGroupItemText>
           </ListGroupItem>
 
-          <ListGroupItem color="warning">
+          <ListGroupItem className="colorNumber2">
             <ListGroupItemHeading>
             <strong>¿EL VALOR DEL DISPOSITIVO INCLUYE RECARGA? </strong>
             </ListGroupItemHeading>
@@ -196,7 +178,7 @@ const ContainerComponent = () => {
             </ListGroupItemText>
           </ListGroupItem>
 
-          <ListGroupItem active>
+          <ListGroupItem className="colorNumber1" >
             <ListGroupItemHeading>
              <strong>¿POR CUALES PEAJES PUEDO CIRCULAR CON ESTE DISPOSITIVO?</strong>
             </ListGroupItemHeading>
@@ -206,7 +188,7 @@ const ContainerComponent = () => {
             </ListGroupItemText>
           </ListGroupItem>
 
-          <ListGroupItem color="info">
+          <ListGroupItem className="colorNumber2">
             <ListGroupItemHeading>
               <strong>¿COMO HOMOLOGO UN DISPOSITIVO?</strong> 
             </ListGroupItemHeading>

@@ -3,6 +3,11 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+  color: #6a4c93;
+}
+
 h5 {
   text-align: center;
   margin-top: 10px;
@@ -60,8 +65,24 @@ progress {
   padding: 40px;
 }
 
+.numbersText {
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  color: #fca311;
+}
+
 .txtFAQ {
   text-align: center;
+}
+
+.colorNumber1 {
+  background-color: #fca311;
+}
+
+.colorNumber2 {
+  background-color: #6a4c93;
+  color: #fff;
 }
 
 /*# sourceMappingURL=container.css.map */

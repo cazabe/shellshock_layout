@@ -3,10 +3,17 @@ $positionText:center;
 $fontSizeSub: 16px;
 $fontSizeText:14px;
 $titleSize:30px;
+$color1: #6a4c93;
+$color2:#fca311;
 
 h2{
     font-size: $fontSizeSub;
     text-align: $positionText;
+}
+
+h3{
+    text-align: $positionText;
+    color:$color1;
 }
 
 h5{
@@ -68,8 +75,25 @@ progress{
     padding:40px;
 }
 
+.numbersText{
+    font-size: 70px;
+    text-align:$positionText;
+    font-weight: bold;
+    color: #fca311;
+}
+
 .txtFAQ{
     text-align: center;
 }
+
+.colorNumber1{
+    background-color:$color2;
+}
+.colorNumber2{
+    background-color:$color1;
+    color: #fff;
+}
+
+
 
 

@@ -41,7 +41,10 @@ return(
             </NavItem>
           </Nav>
           <NavItem className="loginNavItem">
-              <NavLink href="#login"><img className="loginIcon" src={loginIcon}/><strong>Login</strong></NavLink>
+              <NavLink href="#login"><img className="loginIcon" src={loginIcon}/><strong>Abrir cuenta</strong></NavLink>
+          </NavItem>
+          <NavItem className="loginNavItem">
+              <NavLink href="#login"><img className="loginIcon" src={loginIcon}/><strong>Acceso clientes</strong></NavLink>
           </NavItem>
         </Collapse>
       </Navbar>
