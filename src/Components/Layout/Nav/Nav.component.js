@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logoTaxExpress from "../../../Assets/logo-tag-express.png";
-import loginIcon from "../../../Assets/login.png";
+// import loginIcon from "../../../Assets/login.png";
 import { Link } from "react-router-dom";
-import "./nav.style.css";
+import "./nav.css";
 import {
   Collapse,
   Navbar,
@@ -45,20 +45,20 @@ const NavComponent = () => {
               <NavLink href="#preguntas">Preguntas frecuentes</NavLink>
             </NavItem>
           </Nav>
-          <NavItem className="loginNavItem">
+          <NavItem className="loginNavItem mr-3">
             <Link to="/register">
-              <NavLink>
-                <img className="loginIcon" src={loginIcon} />
-                <strong className="loginNavItem">Abrir cuenta</strong>
-              </NavLink>
+              <div className="btn btn-primary">
+                {/* <img className="loginIcon" src={loginIcon} /> */}
+                <strong>Abrir cuenta</strong>
+              </div>
             </Link>
           </NavItem>
           <NavItem className="loginNavItem">
             <Link to="/login">
-              <NavLink>
-                <img className="loginIcon" src={loginIcon} />
-                <strong className="loginNavItem">Acceso clientes</strong>
-              </NavLink>
+              <div className="btn btn-success">
+                {/* <img className="loginIcon" src={loginIcon} /> */}
+                <strong>Acceso clientes</strong>
+              </div>
             </Link>
           </NavItem>
         </Collapse>
