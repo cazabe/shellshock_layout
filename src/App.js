@@ -8,6 +8,7 @@ function App() {
   return (
     <div>
       <Router/>
+      <ContainerComponent/>
       <Footer/>
     </div>
   );
