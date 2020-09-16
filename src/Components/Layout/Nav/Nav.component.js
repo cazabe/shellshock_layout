@@ -30,7 +30,7 @@ const NavComponent = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#contacto">Contacto</NavLink>
+              <NavLink href="#contacto">Contactoooooo</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#puntosVentas">Puntos de ventas</NavLink>
