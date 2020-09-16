@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 import loginImg from "../../../../Assets/loginImg.jpg";
+import './register.css';
 
-const Register = ()=>{
-    return(
-        <div className="login-access">
+const Register = () => {
+  return (
+    <div className="register-access">
       <form action="/action_page.php" method="post">
         <div className="imgcontainer">
           <img src={loginImg} alt="Avatar" className="avatar" />
@@ -11,29 +12,50 @@ const Register = ()=>{
 
         <div className="container">
           <label>
-            <b>Usuario / numero de cedula</b>
+            <b>Nombres</b>
           </label>
           <input
             type="text"
-            placeholder="Ingrese su usuario"
+            placeholder="Ingrese sus nombres"
             name="uname"
             required
           />
 
           <label>
-            <b>Contraseña</b>
+            <b>Apellidos</b>
           </label>
           <input
-            type="password"
-            placeholder="Ingrese su contraseña"
+            type="text"
+            placeholder="Ingrese sus apellidos"
             name="psw"
             required
           />
-            <div>
-          <button type="submit">Ingresar</button>
-          <button type="button" className="button-registrar">
-            Cancelar
-          </button>
+
+          <label>
+            <b>correo</b>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese su correo"
+            name="psw"
+            required
+          />
+
+          <label>
+            <b>usuario</b>
+          </label>
+          <input
+            type="text"
+            placeholder="Ingrese el nombre de usuario"
+            name="psw"
+            required
+          />
+
+          <div>
+            <button type="submit">Registrar</button>
+            <button type="button" className="button-registrar">
+              Cancelar
+            </button>
           </div>
         </div>
 
@@ -45,7 +67,7 @@ const Register = ()=>{
         </div> */}
       </form>
     </div>
-    )
-}
+  );
+};
 
 export default Register;

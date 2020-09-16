@@ -22,7 +22,7 @@ const NavComponent = () => {
       <Navbar className="navTagexpress" color="light" light expand="md">
         
         <NavbarBrand>
-        <Link to="/">
+        <Link to="/shellshock_layout">
           <img className="logoNav" src={logoTaxExpress} alt="logo" />
           </Link>
         </NavbarBrand>
