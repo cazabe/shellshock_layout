@@ -9,7 +9,7 @@ const Routes = () => {
     <Router>
       <Nav />
       <Switch>
-      <Route path="/shellshock_layout/" exact component={ContainerComponent} />
+      <Route path="/" exact component={ContainerComponent} />
         <Route path="/login" exact component={Login} />
         <Route path="/register" exact component={Register} />
        
