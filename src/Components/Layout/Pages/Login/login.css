@@ -21,7 +21,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color: #fcbf49;
+  background-color: #ff9f1c;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -32,7 +32,7 @@ button {
 }
 
 .button-registrar {
-  background-color: #6a4c93;
+  background-color: #00509d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;

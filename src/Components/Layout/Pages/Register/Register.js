@@ -52,8 +52,8 @@ const Register = () => {
           />
 
           <div>
-            <button type="submit">Registrar</button>
-            <button type="button" className="button-registrar">
+            <button type="submit" className="btn btn-primary">Registrar</button>
+            <button type="button" className="btn btn-success">
               Cancelar
             </button>
           </div>

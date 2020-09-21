@@ -22,7 +22,7 @@ const NavComponent = () => {
       <Navbar className="navTagexpress" color="light" light expand="md">
         
         <NavbarBrand>
-        <Link to="/">
+        <Link to="/shellshock_layout/">
           <img className="logoNav" src={logoTaxExpress} alt="logo" />
           </Link>
         </NavbarBrand>
@@ -30,23 +30,22 @@ const NavComponent = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#contacto">Contactoooooo</NavLink>
+              <NavLink href="#contacto">Contacto</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#puntosVentas">Puntos de ventas</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#nosotros">Nosotros</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#rfid">Tag rfid</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="#preguntas">Preguntas frecuentes</NavLink>
+            </NavItem>
+            <NavItem>
+            <Link to="/shellshock_layout/nosotros">
+            <NavLink>Conoce TagExpress</NavLink>
+            </Link>
             </NavItem>
           </Nav>
           <NavItem className="loginNavItem mr-3">
-            <Link to="/register">
+            <Link to="/shellshock_layout/register">
               <div className="btn btn-primary">
                 {/* <img className="loginIcon" src={loginIcon} /> */}
                 <strong>Abrir cuenta</strong>
@@ -54,7 +53,7 @@ const NavComponent = () => {
             </Link>
           </NavItem>
           <NavItem className="loginNavItem">
-            <Link to="/login">
+            <Link to="/shellshock_layout/login">
               <div className="btn btn-success">
                 {/* <img className="loginIcon" src={loginIcon} /> */}
                 <strong>Acceso clientes</strong>

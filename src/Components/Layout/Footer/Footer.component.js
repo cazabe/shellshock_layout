@@ -10,7 +10,7 @@ const FooterComponent = () => {
       <div className="footer-left">
         <img src={logoTagExpress} alt="logo TagExpress" />
         <h3>
-          AYUDANDO A<span> MOVILIZARTE</span>
+          LA SOLUCIÓN PARA TODOS LOS PEAJES DEL <span>ECUADOR</span>
         </h3>
       </div>
       <div className="footer-center">
