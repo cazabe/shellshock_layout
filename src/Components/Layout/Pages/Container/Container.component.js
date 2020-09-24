@@ -11,13 +11,15 @@ import {
 } from "reactstrap";
 import "./container.css";
 import oficinaTag from "../../../../Assets/oficinaTag.jpeg";
-import quality from "../../../../Assets/medal.png";
-import block from "../../../../Assets/block.png";
-import lock from "../../../../Assets/lock.png";
-import rfid from "../../../../Assets/rfid.png";
-import paso1 from "../../../../Assets/tagexpresspasos.png";
 import edif from "../../../../Assets/edidifico_consejo.jpg";
 import logoTaxExpress from "../../../../Assets/logo-tag-express.png";
+import Pasos from "../../../../Assets/PasosTag.jpg";
+import tagecu from "../../../../Assets/publicidad4.jpg";
+import prefAdqui from "../../../../Assets/preferir_adquirir.jpg";
+import prefAdqui2 from "../../../../Assets/publicidad2.jpg";
+import pagos from "../../../../Assets/publicidad10.jpg";
+import puntosV from "../../../../Assets/publicidad7.jpg";
+import tagecu2 from "../../../../Assets/publicidad6.jpg";
 
 const ContainerComponent = () => {
   return (
@@ -56,73 +58,47 @@ const ContainerComponent = () => {
         </Row>
 
         <div>
+        <Row md="12" className="brandImg" id="puntosVentas">
+          <Col sm="7" className="card-style">
+            <img
+              src={tagecu}
+              alt="Suppliers"
+              style={{height:"500px"}}
+            ></img>
+          </Col>
+          <Col sm="5" className="card-style">
+            <img src={tagecu2} style={{height:"500px"}} alt="Suppliers"></img>
+          </Col>
+        </Row>
+        </div>
+
+        <div>
           <h1 className="subtitle_section">
-            ¿POR QUÉ PREFERIR Y ADQUIRIR <img className="logoNav" src={logoTaxExpress} alt="logo" />?
+           <img className="logoNav" src={logoTaxExpress} alt="logo" />
           </h1>
         </div>
         <Row md="12" className="brandImg" id="puntosVentas">
-          <Col sm="2" className="card-style" style={{ marginLeft: "130px" }}>
+          <Col sm="8" className="card-style">
             <img
-              src={quality}
+              src={prefAdqui}
               alt="Suppliers"
-              className="iconsTagexpress"
+              style={{height:"500px"}}
             ></img>
-            <p className="serviceText">
-              Nuestros dispositivod son de alta calidad y confiabilidad
-            </p>
           </Col>
-          <Col sm="2" className="card-style ml-5">
-            <img src={block} alt="Suppliers" className="iconsTagexpress"></img>
-            <p className="serviceText">
-              Nuestros dispositivos no son clonables
-            </p>
-          </Col>
-          <Col sm="2" className="card-style ml-5">
-            <img src={lock} alt="Suppliers" className="iconsTagexpress"></img>
-            <p className="serviceText">
-              Nuestros dispositovos brindan seguridad tanto al usuario como a
-              las estaciones de peaje por donde se transita
-            </p>
-          </Col>
-          <Col sm="2" className="card-style ml-5">
-            <img src={rfid} alt="Suppliers" className="iconsTagexpress"></img>
-            <p className="serviceText">
-              La potencia de la lectura de nuetsros dispositivos permite que sea
-              detectado sin inconvenientes al cruzar el peaje evitando así
-              multas
-            </p>
+          <Col sm="4" className="card-style">
+            <img src={prefAdqui2} style={{height:"500px"}} alt="Suppliers"></img>
           </Col>
         </Row>
 
         <section>
         <div>
-          <h1 className="subtitle_section">Pasos para colocar tu <img className="logoNav" src={logoTaxExpress} alt="logo" /></h1>
+          <h1 className="subtitle_section">
+           <img className="logoNav" src={logoTaxExpress} alt="logo" />
+          </h1>
         </div>
         <Row md="12" className="brandImg" id="puntosVentas">
-          <Col sm="3" className="card-style" style={{ marginLeft: "100px" }}>
-            <img src={paso1} alt="Suppliers"></img>
-            <div>
-              <h5>Paso 1</h5>
-            </div>
-            <p className="serviceText">
-              Junto a las oficinas del peaje Autopista General Rumiñahui
-            </p>
-          </Col>
-          <Col sm="3" className="card-style ml-5">
-            <img src={paso1} alt="Suppliers"></img>
-            <div>
-              <h5>Paso 2</h5>
-            </div>
-            <p className="serviceText">
-              Av. Intervalles, Sangolquí, peaje intervalles
-            </p>
-          </Col>
-          <Col sm="3" className="card-style ml-5">
-            <img src={paso1} alt="Suppliers"></img>
-            <div className="h3Title">
-              <h5>Paso 3</h5>
-            </div>
-            <p className="serviceText">Juan Larrea, Quito 170103</p>
+          <Col sm="12" className="card-style">
+            <img style={{height:"500px"}} src={Pasos} alt="Suppliers"></img>
           </Col>
         </Row>
         </section>
@@ -145,6 +121,24 @@ const ContainerComponent = () => {
             </Col>
           </Row>
         </section>
+      {/* Pagos */}
+        <div>
+          <h1 className="subtitle_section">
+           <img className="logoNav" src={logoTaxExpress} alt="logo" />
+          </h1>
+        </div>
+        <Row md="12" className="brandImg" id="puntosVentas">
+          <Col sm="7" className="card-style">
+            <img
+              src={pagos}
+              alt="Suppliers"
+              style={{height:"500px"}}
+            ></img>
+          </Col>
+          <Col sm="5" className="card-style">
+            <img src={puntosV} style={{height:"500px"}} alt="Suppliers"></img>
+          </Col>
+        </Row>
 
         <section id="contacto">
           <h1 className="subtitle_section">Contacto</h1>
