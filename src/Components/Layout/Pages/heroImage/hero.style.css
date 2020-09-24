@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 100%;
+  max-width: 100%;
 }
 
 .hero-text {
@@ -30,6 +30,15 @@
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .hero-image {
+      height: 900px;
+    }
 }
 
 /*# sourceMappingURL=hero.style.css.map */
