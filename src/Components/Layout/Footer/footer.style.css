@@ -25,7 +25,7 @@ footer {
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 /* Footer left */

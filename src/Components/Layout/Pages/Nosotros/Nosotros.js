@@ -21,6 +21,18 @@ const Nosotros = () => {
           <h1 className="subtitle_section">Conoce de nosotros</h1>
         </div>
         <Row md="12" className="brandImg" id="puntosVentas">
+        <Col sm="6">
+        <img src={mision} alt="Suppliers"></img>
+        </Col>
+        <Col sm="6">
+        <div className="nostrosText">
+        <p>Somos una empresa preocupada en brindar un mejor servicio a los usuarios que transitan por las vías con estaciones de peaje; por esto hemos implementado diferentes puntos de venta en sitios estratégicos de tal manera que se facilite la adquisición y recarga de los tags; además nos preocupamos de brindar el servicio con nuestros puntos móviles 
+          que nos permiten acercar a los sitios donde ustedes como usuarios nos necesitan.</p>
+        </div>
+        </Col>
+        </Row>
+       
+        <Row md="12" className="brandImg" id="puntosVentas">
           <Col sm="3" className="card-style" style={{ marginLeft: "100px" }}>
           <img src={mision} alt="Suppliers"></img>
             <div>

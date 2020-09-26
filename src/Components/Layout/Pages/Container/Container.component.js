@@ -12,7 +12,7 @@ import {
 import "./container.css";
 import oficinaTag from "../../../../Assets/oficinaTag.jpeg";
 import edif from "../../../../Assets/edidifico_consejo.jpg";
-import logoTaxExpress from "../../../../Assets/logo-tag-express.png";
+import logoTaxExpress from "../../../../Assets/logo-sin-fondo-tag-express.png";
 import Pasos from "../../../../Assets/PasosTag.jpg";
 import tagecu from "../../../../Assets/publicidad4.jpg";
 import prefAdqui from "../../../../Assets/preferir_adquirir.jpg";
@@ -27,7 +27,10 @@ const ContainerComponent = () => {
       <HeroImg />
       <Container>
         <div>
-          <h1 className="subtitle_section">Puntos de venta <img className="logoNav" src={logoTaxExpress} alt="logo" /></h1>
+          <h1 className="subtitle_section">
+            Puntos de venta{" "}
+            <img className="logoNav" src={logoTaxExpress} alt="logo" />
+          </h1>
         </div>
         <Row md="12" className="brandImg" id="puntosVentas">
           <Col sm="3" className="card-style" style={{ marginLeft: "100px" }}>
@@ -57,51 +60,71 @@ const ContainerComponent = () => {
           </Col>
         </Row>
 
-        <div>
-        <Row md="12" className="brandImg" id="puntosVentas">
-          <Col sm="7" className="card-style">
-            <img
-              src={tagecu}
-              alt="Suppliers"
-              style={{height:"500px"}}
-            ></img>
-          </Col>
-          <Col sm="5" className="card-style">
-            <img src={tagecu2} style={{height:"500px"}} alt="Suppliers"></img>
-          </Col>
-        </Row>
-        </div>
-
-        <div>
+        <div className="tag_express_sub">
           <h1 className="subtitle_section">
-           <img className="logoNav" src={logoTaxExpress} alt="logo" />
+            <img className="logoNav" src={logoTaxExpress} alt="logo" />
           </h1>
         </div>
-        <Row md="12" className="brandImg" id="puntosVentas">
-          <Col sm="8" className="card-style">
-            <img
-              src={prefAdqui}
-              alt="Suppliers"
-              style={{height:"500px"}}
-            ></img>
-          </Col>
-          <Col sm="4" className="card-style">
-            <img src={prefAdqui2} style={{height:"500px"}} alt="Suppliers"></img>
-          </Col>
-        </Row>
 
-        <section>
-        <div>
-          <h1 className="subtitle_section">
-           <img className="logoNav" src={logoTaxExpress} alt="logo" />
-          </h1>
+        <div className="card1">
+          <Row md="12" className="brandImg" id="puntosVentas">
+            <Col md="6">
+              <img
+                src={prefAdqui}
+                alt="Suppliers"
+                style={{ height: "230px", width: "100%" }}
+              ></img>
+            </Col>
+            <Col md="6" className="text_card_info">
+              <p>Texto</p>
+            </Col>
+          </Row>
         </div>
-        <Row md="12" className="brandImg" id="puntosVentas">
-          <Col sm="12" className="card-style">
-            <img style={{height:"500px"}} src={Pasos} alt="Suppliers"></img>
-          </Col>
-        </Row>
-        </section>
+
+        <div className="card2">
+          <Row md="12" className="brandImg" id="puntosVentas">
+            <Col md="6" className="text_card_info">
+              <p>Texto</p>
+            </Col>
+            <Col md="6">
+              <img
+                src={prefAdqui}
+                alt="Suppliers"
+                style={{ height: "230px", width: "100%" }}
+              ></img>
+            </Col>
+          </Row>
+        </div>
+
+        <div className="card3">
+          <Row md="12" className="brandImg" id="puntosVentas">
+            <Col md="6">
+              <img
+                src={pagos}
+                alt="Suppliers"
+                style={{ height: "230px", width: "100%" }}
+              ></img>
+            </Col>
+            <Col md="6" className="text_card_info">
+              <p>Texto</p>
+            </Col>
+          </Row>
+        </div>
+
+        <div className="card4">
+          <Row md="12" className="brandImg" id="puntosVentas">
+            <Col md="6" className="text_card_info">
+              <p>Texto</p>
+            </Col>
+            <Col md="6">
+              <img
+                src={prefAdqui}
+                alt="Suppliers"
+                style={{ height: "230px", width: "100%"}}
+              ></img>
+            </Col>
+          </Row>
+        </div>
 
         <section>
           <h2 className="subtitle_section">GRACIAS A NUESTRA GESTIÓN</h2>
@@ -121,24 +144,6 @@ const ContainerComponent = () => {
             </Col>
           </Row>
         </section>
-      {/* Pagos */}
-        <div>
-          <h1 className="subtitle_section">
-           <img className="logoNav" src={logoTaxExpress} alt="logo" />
-          </h1>
-        </div>
-        <Row md="12" className="brandImg" id="puntosVentas">
-          <Col sm="7" className="card-style">
-            <img
-              src={pagos}
-              alt="Suppliers"
-              style={{height:"500px"}}
-            ></img>
-          </Col>
-          <Col sm="5" className="card-style">
-            <img src={puntosV} style={{height:"500px"}} alt="Suppliers"></img>
-          </Col>
-        </Row>
 
         <section id="contacto">
           <h1 className="subtitle_section">Contacto</h1>
@@ -190,52 +195,70 @@ const ContainerComponent = () => {
         </section>
         <section id="preguntas">
           <h1 className="subtitle_section">PREGUNTAS FRECUENTES</h1>
-          <Container style={{width:"70%"}}>
-          <div>
-    <Button className="faq" id="toggler" style={{ marginBottom: '1rem' }}>
-      Pregunta1
-    </Button>
-    <UncontrolledCollapse toggler="#toggler">
-      <Card>
-        <CardBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni, voluptas debitis
-          similique porro a molestias consequuntur earum odio officiis natus, amet hic, iste sed
-          dignissimos esse fuga! Minus, alias.
-        </CardBody>
-      </Card>
-    </UncontrolledCollapse>
-  </div>
+          <Container style={{ width: "70%" }}>
+            <div>
+              <Button
+                color="info"
+                className="faq"
+                id="toggler"
+                style={{ marginBottom: "1rem" }}
+              >
+                Pregunta1
+              </Button>
+              <UncontrolledCollapse toggler="#toggler">
+                <Card>
+                  <CardBody>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt magni, voluptas debitis similique porro a molestias
+                    consequuntur earum odio officiis natus, amet hic, iste sed
+                    dignissimos esse fuga! Minus, alias.
+                  </CardBody>
+                </Card>
+              </UncontrolledCollapse>
+            </div>
 
-  <div>
-    <Button className="faq" id="toggler2" style={{ marginBottom: '1rem' }}>
-      Pregunta2
-    </Button>
-    <UncontrolledCollapse toggler="#toggler2">
-      <Card>
-        <CardBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni, voluptas debitis
-          similique porro a molestias consequuntur earum odio officiis natus, amet hic, iste sed
-          dignissimos esse fuga! Minus, alias.
-        </CardBody>
-      </Card>
-    </UncontrolledCollapse>
-  </div>
+            <div>
+              <Button
+                color="info"
+                className="faq"
+                id="toggler2"
+                style={{ marginBottom: "1rem" }}
+              >
+                Pregunta2
+              </Button>
+              <UncontrolledCollapse toggler="#toggler2">
+                <Card>
+                  <CardBody>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt magni, voluptas debitis similique porro a molestias
+                    consequuntur earum odio officiis natus, amet hic, iste sed
+                    dignissimos esse fuga! Minus, alias.
+                  </CardBody>
+                </Card>
+              </UncontrolledCollapse>
+            </div>
 
-  <div>
-    <Button className="faq"  id="toggler3" style={{ marginBottom: '1rem' }}>
-      Pregunta3
-    </Button>
-    <UncontrolledCollapse toggler="#toggler3">
-      <Card>
-        <CardBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni, voluptas debitis
-          similique porro a molestias consequuntur earum odio officiis natus, amet hic, iste sed
-          dignissimos esse fuga! Minus, alias.
-        </CardBody>
-      </Card>
-    </UncontrolledCollapse>
-  </div>
-  </Container>
+            <div>
+              <Button
+                color="info"
+                className="faq"
+                id="toggler3"
+                style={{ marginBottom: "1rem" }}
+              >
+                Pregunta3
+              </Button>
+              <UncontrolledCollapse toggler="#toggler3">
+                <Card>
+                  <CardBody>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt magni, voluptas debitis similique porro a molestias
+                    consequuntur earum odio officiis natus, amet hic, iste sed
+                    dignissimos esse fuga! Minus, alias.
+                  </CardBody>
+                </Card>
+              </UncontrolledCollapse>
+            </div>
+          </Container>
         </section>
       </Container>
     </>

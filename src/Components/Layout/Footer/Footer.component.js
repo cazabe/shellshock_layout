@@ -1,6 +1,6 @@
 import React from "react";
 import {Row, Col } from "reactstrap";
-import logoTagExpress from "../../../Assets/logo-tag-express.png";
+import logoTagExpress from "../../../Assets/logo-sin-fondo-tag-express.png";
 import "./footer.style.css";
 
 const FooterComponent = () => {
@@ -9,9 +9,6 @@ const FooterComponent = () => {
     <footer className="footer-distributed">
       <div className="footer-left">
         <img src={logoTagExpress} alt="logo TagExpress" />
-        <h3>
-          LA SOLUCIÓN PARA TODOS LOS PEAJES DEL <span>ECUADOR</span>
-        </h3>
       </div>
       <div className="footer-center">
         <div style={{ padding: "5px" }}>

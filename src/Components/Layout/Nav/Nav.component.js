@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoTaxExpress from "../../../Assets/logo-tag-express.png";
+import logoTaxExpress from "../../../Assets/logo-sin-fondo-tag-express.png";
 // import loginIcon from "../../../Assets/login.png";
 import { Link } from "react-router-dom";
 import "./nav.css";

@@ -26,22 +26,22 @@ a {
 
 .btn-primary {
   border-color: #f2f2f2;
-  background-color: #ff9f1c;
-  color: #fff1e6 !important;
+  background-color: #FFDD00;
+  color: #14213d !important;
   padding: 11px;
   text-decoration: none;
 }
 
 .btn-primary:hover {
   border-color: #f2f2f2;
-  background-color: #ffba08;
+  background-color: #ffe66d;
   color: #fff;
   text-decoration: none;
 }
 
 .btn-success {
   border-color: #f2f2f2;
-  background-color: #00509d;
+  background-color: #1d3557;
   color: #fff1e6 !important;
   padding: 11px;
   text-decoration: none;
@@ -49,7 +49,7 @@ a {
 
 .btn-success:hover {
   border-color: #f2f2f2;
-  background-color: #83c5be;
+  background-color: #00509d;
   color: #fff;
   text-decoration: none;
 }
