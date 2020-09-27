@@ -17,7 +17,7 @@ const FooterComponent = () => {
           </div>
           <div style={{ padding: "5px" }}>
             <i style={{ padding: "0px" }} className="fa fa-phone"></i>
-            <p>0981218994</p>
+            <p>098-558-7634</p>
           </div>
           <div style={{ padding: "5px" }}>
             <i style={{ padding: "0px" }} className="fa fa-envelope"></i>

@@ -1,5 +1,5 @@
 h2 {
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -14,6 +14,10 @@ h5 {
   margin-bottom: 10px;
 }
 
+h6{
+  text-align: center;
+}
+
 .brandImg h1 {
   text-align: center;
 }
@@ -23,7 +27,7 @@ h5 {
 }
 
 .serviceText {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 

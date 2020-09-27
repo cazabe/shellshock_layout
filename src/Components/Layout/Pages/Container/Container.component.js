@@ -13,13 +13,8 @@ import "./container.css";
 import oficinaTag from "../../../../Assets/oficinaTag.jpeg";
 import edif from "../../../../Assets/edidifico_consejo.jpg";
 import logoTaxExpress from "../../../../Assets/logo-sin-fondo-tag-express.png";
-import Pasos from "../../../../Assets/PasosTag.jpg";
-import tagecu from "../../../../Assets/publicidad4.jpg";
-import prefAdqui from "../../../../Assets/preferir_adquirir.jpg";
-import prefAdqui2 from "../../../../Assets/publicidad2.jpg";
-import pagos from "../../../../Assets/publicidad10.jpg";
-import puntosV from "../../../../Assets/publicidad7.jpg";
-import tagecu2 from "../../../../Assets/publicidad6.jpg";
+import pagotipo from "../../../../Assets/banner2.jpg";
+import puntoInter from "../../../../Assets/puntoIntervalles.png";
 
 const ContainerComponent = () => {
   return (
@@ -39,17 +34,15 @@ const ContainerComponent = () => {
               <h5>AUTOPISTA GENERAL RUMIÑAHUI</h5>
             </div>
             <p className="serviceText">
-              Junto a las oficinas del peaje Autopista General Rumiñahui
+              En el peaje Autopista General Rumiñahui
             </p>
           </Col>
           <Col sm="3" className="card-style ml-5">
-            <img src={edif} alt="Suppliers"></img>
+            <img src={puntoInter} alt="Suppliers"></img>
             <div>
               <h5>PEAJE INTERVALLES</h5>
             </div>
-            <p className="serviceText">
-              Av. Intervalles, Sangolquí, peaje intervalles
-            </p>
+            <p className="serviceText">Av. Intervalles, peaje intervalles</p>
           </Col>
           <Col sm="3" className="card-style ml-5">
             <img src={edif} alt="Suppliers"></img>
@@ -70,13 +63,27 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6">
               <img
-                src={prefAdqui}
+                src={pagotipo}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
             </Col>
             <Col md="6" className="text_card_info">
-              <p>Texto</p>
+              <h2>BENEFICIOS</h2>
+              <h6>SALUD, SEGURIDAD Y OPTIMIZACIÓN DEL TIEMPO</h6>
+              <ul style={{ "line-height": "1.5rem" }}>
+                <li>
+                  Disminución de tiempos en cola en las estaciones de peaje.
+                </li>
+                <li>
+                  Permite llevar una Gestión de Cuenta, es decir puedes
+                  verificar el histórico de pasadas del vehiculo o flota.
+                </li>
+                <li>
+                  Seguridad y control del vehículo o de la flota al verificar
+                  cumplimiento de rutas y tiempos de traslados.
+                </li>
+              </ul>
             </Col>
           </Row>
         </div>
@@ -84,11 +91,22 @@ const ContainerComponent = () => {
         <div className="card2">
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6" className="text_card_info">
-              <p>Texto</p>
+              <h2>BENEFICIOS</h2>
+              <h6>
+                RAZONES POR LAS CUALES PREFERIR Y ADQUIRIR TU{" "}
+                <strong>TAGEXPRESS</strong>:
+              </h6>
+              <ul style={{ "line-height": "1.5rem" }}>
+                <li>Calidad y confiavilidad</li>
+                <li>No son clonables.</li>
+                <li>No son transferibles.</li>
+                <li>Brindan seguridad.</li>
+                <li>Costos asequibles.</li>
+              </ul>
             </Col>
             <Col md="6">
               <img
-                src={prefAdqui}
+                src={pagotipo}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -100,13 +118,22 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6">
               <img
-                src={pagos}
+                src={pagotipo}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
             </Col>
             <Col md="6" className="text_card_info">
-              <p>Texto</p>
+              <h2>
+                PASOS PARA COLOCAR TU <strong>TAG EXPRESS</strong>
+              </h2>
+              <h6>USARLO ES FÁCIL Y PRÁCTICO, AQUÍ LOS 4 SIMPLES PASOS:</h6>
+              <ol style={{ "line-height": "1.5rem" }}>
+                <li>Despegar lentamente el dispositivo.</li>
+                <li>Colocarlo en el parabrisas a unos 15cm del borde superior</li>
+                <li>Presiona bien el dispositivo al momento de pegarlo.</li>
+                <li>El dispositivo autoadhesivo debe pegarse siempre con la cara impresa</li>
+              </ol>
             </Col>
           </Row>
         </div>
@@ -114,17 +141,50 @@ const ContainerComponent = () => {
         <div className="card4">
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6" className="text_card_info">
-              <p>Texto</p>
+              <h2>
+               PORQUE PREFERIRNOS
+              </h2>
+              <h6>TENEMOS VARIOS BENEFICIOS PARA TI</h6>
+              <ul style={{ "line-height": "1.5rem" }}>
+                <li>Es un tag de alta calidad y confiabilidad.</li>
+                <li>La potencia de su lectura permite que sea detectado sin inconvenientes cuando el vehículo cruza una estación de peaje </li>
+                <li>Evita que seas un evasor de peaje y que seas sancionado con el 15% de un SBU según el COIP Art. 390 numeral 2</li>
+              </ul>
             </Col>
             <Col md="6">
               <img
-                src={prefAdqui}
+                src={pagotipo}
                 alt="Suppliers"
-                style={{ height: "230px", width: "100%"}}
+                style={{ height: "230px", width: "100%" }}
               ></img>
             </Col>
           </Row>
         </div>
+
+        <div className="card5">
+          <Row md="12" className="brandImg" id="puntosVentas">
+            <Col md="6">
+              <img
+                src={pagotipo}
+                alt="Suppliers"
+                style={{ height: "230px", width: "100%" }}
+              ></img>
+            </Col>
+            <Col md="6" className="text_card_info">
+              <h2>
+                FORMAS DE PAGO <strong>TAG EXPRESS</strong>
+              </h2>
+              <h6>ESCOGE LA QUE MAS TE GUSTE</h6>
+              <ul style={{ "line-height": "1.5rem" }}>
+                <li>Efectivo</li>
+                <li>Transferencia</li>
+              </ul>
+            </Col>
+          </Row>
+        </div>
+        {/* <div className="banner2">
+              <img src={pagotipo} alt="banner2"/>
+        </div> */}
 
         <section>
           <h2 className="subtitle_section">GRACIAS A NUESTRA GESTIÓN</h2>
@@ -161,7 +221,7 @@ const ContainerComponent = () => {
                 <h2>
                   <strong>Télefonos:</strong>
                 </h2>
-                <p className="serviceText">0967879065</p>
+                <p className="serviceText">098-558-7634</p>
               </div>
               <div className="progress-bar-item">
                 <h2>
@@ -203,15 +263,22 @@ const ContainerComponent = () => {
                 id="toggler"
                 style={{ marginBottom: "1rem" }}
               >
-                Pregunta1
+                ¿Cómo activo <strong>TAG EXPRESS</strong> en las estaciones de
+                peaje?
               </Button>
               <UncontrolledCollapse toggler="#toggler">
                 <Card>
                   <CardBody>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nesciunt magni, voluptas debitis similique porro a molestias
-                    consequuntur earum odio officiis natus, amet hic, iste sed
-                    dignissimos esse fuga! Minus, alias.
+                    <p>
+                      Al ser Instituciones o Empresas independientes entre sí,
+                      el tag debe ser activado en cada una de ellas conforme los
+                      requisitos que soliciten, es importante contar con:
+                    </p>
+                    <ul>
+                      <li>matrícula del vehículo para revisar sus datos</li>
+                      <li>Cédula del propietario</li>
+                      <li>del vehículo Valor para recarga</li>
+                    </ul>
                   </CardBody>
                 </Card>
               </UncontrolledCollapse>
@@ -224,15 +291,35 @@ const ContainerComponent = () => {
                 id="toggler2"
                 style={{ marginBottom: "1rem" }}
               >
-                Pregunta2
+                ¿En que Estaciones de peaje puedo utilizar{" "}
+                <strong>TAG EXPRESS</strong>?
               </Button>
               <UncontrolledCollapse toggler="#toggler2">
                 <Card>
                   <CardBody>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nesciunt magni, voluptas debitis similique porro a molestias
-                    consequuntur earum odio officiis natus, amet hic, iste sed
-                    dignissimos esse fuga! Minus, alias.
+                    <p>
+                      En todas que tengan tecnología pasiva, es decir las que
+                      trabajen con un tag tipo sticker
+                    </p>
+                    <ul>
+                      <li>
+                        Peajes del Gobierno de Pichincha: Autopista General
+                        Rumiñahui e Intervalles
+                      </li>
+                      <li>Peaje de Alóag-Unión del Toachi</li>
+                      <li>
+                        Peajes del Gobierno de Guayas: Concesiones{" "}
+                        <strong>CONCEGUA y CONORTE</strong>
+                      </li>
+                      <li>
+                        Peajes de <strong>PANAVIAL</strong>
+                      </li>
+                      <li>Peaje de Santo Domingo</li>
+                      <li>Peaje Río 7 en el Sur del país</li>
+                      <li>Peaje Vía a la Costa</li>
+                      <li>Peaje de Manabí</li>
+                      <li>Peaje en Machala</li>
+                    </ul>
                   </CardBody>
                 </Card>
               </UncontrolledCollapse>
@@ -245,15 +332,16 @@ const ContainerComponent = () => {
                 id="toggler3"
                 style={{ marginBottom: "1rem" }}
               >
-                Pregunta3
+                ¿Tiene algun costo homologar mi <strong>TAG EXPRESS</strong>?
               </Button>
               <UncontrolledCollapse toggler="#toggler3">
                 <Card>
                   <CardBody>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nesciunt magni, voluptas debitis similique porro a molestias
-                    consequuntur earum odio officiis natus, amet hic, iste sed
-                    dignissimos esse fuga! Minus, alias.
+                    <p>
+                      No, una vez adquirido el dispositivo este se puede
+                      homologar de forma gratuita en las estaciones de peajes
+                      con tecnología pasiva a nivel nacional.
+                    </p>
                   </CardBody>
                 </Card>
               </UncontrolledCollapse>
