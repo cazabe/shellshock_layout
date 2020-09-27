@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import mision from "../../../../Assets/mision.jpg";
+import vision from "../../../../Assets/vision.jpg";
+import valores from "../../../../Assets/valores.jpg";
+import logoTag from "../../../../Assets/logo-sin-fondo-tag-express.png";
 import "./nosotros.css";
 
 const Nosotros = () => {
@@ -22,7 +25,7 @@ const Nosotros = () => {
         </div>
         <Row md="12" className="brandImg" id="puntosVentas">
         <Col sm="6">
-        <img src={mision} alt="Suppliers"></img>
+        <img src={logoTag} alt="Suppliers"></img>
         </Col>
         <Col sm="6">
         <div className="nostrosText">
@@ -48,14 +51,14 @@ const Nosotros = () => {
               </ul>
           </Col>
           <Col sm="3" className="card-style ml-5">
-          <img src={mision} alt="Suppliers"></img>
+          <img src={vision} alt="Suppliers"></img>
             <div className="h3Title">
               <h5>Visión</h5>
             </div>
             <p className="serviceText">Ser la mejor empresa en ofrecer soluciones y servicios con innovación y calidad</p>
           </Col>
           <Col sm="3" className="card-style ml-5">
-          <img src={mision} alt="Suppliers"></img>
+          <img src={valores} alt="Suppliers"></img>
             <div>
               <h5>Valores</h5>
             </div>

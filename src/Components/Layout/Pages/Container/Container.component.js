@@ -182,6 +182,7 @@ const ContainerComponent = () => {
             </Col>
           </Row>
         </div>
+        
         {/* <div className="banner2">
               <img src={pagotipo} alt="banner2"/>
         </div> */}
