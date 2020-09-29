@@ -15,6 +15,11 @@ import edif from "../../../../Assets/edidifico_consejo.jpg";
 import logoTaxExpress from "../../../../Assets/logo-sin-fondo-tag-express.png";
 import pagotipo from "../../../../Assets/banner2.jpg";
 import puntoInter from "../../../../Assets/puntoIntervalles.png";
+import banner7 from "../../../../Assets/banner7.jpg";
+import banner6 from "../../../../Assets/banner6.jpg";
+import banner3 from "../../../../Assets/banner3.jpg";
+import publicidad3 from "../../../../Assets/publicidad3.jpg";
+import Parrallax from "../Parallax/Parallax";
 
 const ContainerComponent = () => {
   return (
@@ -63,7 +68,7 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6">
               <img
-                src={pagotipo}
+                src={banner7}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -106,7 +111,7 @@ const ContainerComponent = () => {
             </Col>
             <Col md="6">
               <img
-                src={pagotipo}
+                src={banner6}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -118,7 +123,7 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6">
               <img
-                src={pagotipo}
+                src={banner3}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -153,7 +158,7 @@ const ContainerComponent = () => {
             </Col>
             <Col md="6">
               <img
-                src={pagotipo}
+                src={publicidad3}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -186,6 +191,7 @@ const ContainerComponent = () => {
         {/* <div className="banner2">
               <img src={pagotipo} alt="banner2"/>
         </div> */}
+        
 
         <section>
           <h2 className="subtitle_section">GRACIAS A NUESTRA GESTIÓN</h2>
@@ -205,6 +211,8 @@ const ContainerComponent = () => {
             </Col>
           </Row>
         </section>
+
+        <Parrallax/>
 
         <section id="contacto">
           <h1 className="subtitle_section">Contacto</h1>

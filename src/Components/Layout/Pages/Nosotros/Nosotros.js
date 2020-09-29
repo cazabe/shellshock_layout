@@ -12,9 +12,6 @@ const Nosotros = () => {
       <div>
         <div className="hero-image2">
           <div className="hero-text2">
-            <h1 className="hero_title2">
-              LA SOLUCIÓN PARA TODOS LOS PEAJES DEL <span>ECUADOR</span>
-            </h1>
             {/* <button>Hire me</button> */}
           </div>
         </div>
