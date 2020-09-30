@@ -26,7 +26,7 @@ const Nosotros = () => {
         </Col>
         <Col sm="6">
         <div className="nostrosText">
-        <p>Somos una empresa preocupada en brindar un mejor servicio a los usuarios que transitan por las vías con estaciones de peaje; por esto hemos implementado diferentes puntos de venta en sitios estratégicos de tal manera que se facilite la adquisición y recarga de los tags; además nos preocupamos de brindar el servicio con nuestros puntos móviles 
+        <p className="nosotros-text" style={{textAlign:"justify"}}>Somos una empresa preocupada en brindar un mejor servicio a los usuarios que transitan por las vías con estaciones de peaje; por esto hemos implementado diferentes puntos de venta en sitios estratégicos de tal manera que se facilite la adquisición y recarga de los tags; además nos preocupamos de brindar el servicio con nuestros puntos móviles 
           que nos permiten acercar a los sitios donde ustedes como usuarios nos necesitan.</p>
         </div>
         </Col>
@@ -52,7 +52,7 @@ const Nosotros = () => {
             <div className="h3Title">
               <h5>Visión</h5>
             </div>
-            <p className="serviceText">Ser la mejor empresa en ofrecer soluciones y servicios con innovación y calidad</p>
+            <p className="nostrosText" style={{fontFamily:"Helvetica"}}>Ser la mejor empresa en ofrecer soluciones y servicios con innovación y calidad</p>
           </Col>
           <Col sm="3" className="card-style ml-5">
           <img src={valores} alt="Suppliers"></img>

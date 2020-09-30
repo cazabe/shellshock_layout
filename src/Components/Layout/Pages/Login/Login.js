@@ -12,7 +12,7 @@ const Login = () => {
 
         <div className="container">
           <label>
-            <b>Usuario / numero de cedula</b>
+            <b>Usuario / número de cedúla</b>
           </label>
           <input
             type="text"
