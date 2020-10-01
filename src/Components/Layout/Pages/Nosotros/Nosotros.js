@@ -61,7 +61,7 @@ const Nosotros = () => {
             </div>
             <ul className="ulMision">
               <li>Actuamos con honestidad y transparencia </li> 
-              <li>Ofrecemos calidad en nuestro producto y servicio, generando </li> 
+              <li>Ofrecemos calidad en nuestro producto y servicio</li> 
               <li>Trabajamos con pasión </li>
               <li>Generamos competitividad buscando la excelencia</li>
               <li>Creamos herramientas para facilitar el servicio a nuestros clientes </li>

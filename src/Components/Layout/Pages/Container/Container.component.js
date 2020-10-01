@@ -52,9 +52,9 @@ const ContainerComponent = () => {
           <Col sm="3" className="card-style ml-5">
             <img src={peajeAloag} alt="Suppliers"></img>
             <div className="h3Title">
-              <h5>PEAJE ALOG</h5>
+              <h5>PEAJE ALÓAG</h5>
             </div>
-            <p className="serviceText">Vía Aloag Santo Domingo, Peaje Aloag</p>
+            <p className="serviceText">Vía Alóag Santo Domingo, Peaje Alóag</p>
           </Col>
         </Row>
 
@@ -135,7 +135,7 @@ const ContainerComponent = () => {
               <h6>USARLO ES FÁCIL Y PRÁCTICO, AQUÍ LOS 4 SIMPLES PASOS:</h6>
               <ol style={{ "lineHeight": "1.5rem" }}>
                 <li>Despega lentamente el tag del adhesivo blanco.</li>
-                <li>Coloca en el parabrisas a unos 15cm del borde superior, tras el retrovisor</li>
+                <li>Coloca en el parabrisas 15cm del borde superior, tras el retrovisor</li>
                 <li>Presiona bien el dispositivo al momento de pegarlo.</li>
                 <li>Recuerda que tu tag debes colocarlo en la parte interna del vehículo</li>
               </ol>
@@ -175,7 +175,7 @@ const ContainerComponent = () => {
                 style={{ height: "230px", width: "100%" }}
               ></img>
             </Col>
-            <Col md="6" className="text_card_info">
+            <Col md="6" className="text_card_info pt-5">
               <h2>
                 FORMAS DE PAGO <strong>TAG EXPRESS</strong>
               </h2>
@@ -284,7 +284,7 @@ const ContainerComponent = () => {
                       requisitos que soliciten, es importante contar con:
                     </p>
                     <ul>
-                      <li>matrícula del vehículo para revisar sus datos</li>
+                      <li>Matrícula del vehículo para revisar sus datos</li>
                       <li>Cédula del propietario del vehículo</li>
                       <li>Valor para recarga</li>
                     </ul>
