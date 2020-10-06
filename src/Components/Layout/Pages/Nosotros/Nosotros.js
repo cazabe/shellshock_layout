@@ -12,9 +12,6 @@ const Nosotros = () => {
       <div>
         <div className="hero-image2">
           <div className="hero-text2">
-            <h1 className="hero_title2">
-              LA SOLUCIÓN PARA TODOS LOS PEAJES DEL <span>ECUADOR</span>
-            </h1>
             {/* <button>Hire me</button> */}
           </div>
         </div>
@@ -29,7 +26,7 @@ const Nosotros = () => {
         </Col>
         <Col sm="6">
         <div className="nostrosText">
-        <p>Somos una empresa preocupada en brindar un mejor servicio a los usuarios que transitan por las vías con estaciones de peaje; por esto hemos implementado diferentes puntos de venta en sitios estratégicos de tal manera que se facilite la adquisición y recarga de los tags; además nos preocupamos de brindar el servicio con nuestros puntos móviles 
+        <p className="nosotros-text" style={{textAlign:"justify"}}>Somos una empresa preocupada en brindar un mejor servicio a los usuarios que transitan por las vías con estaciones de peaje; por esto hemos implementado diferentes puntos de venta en sitios estratégicos de tal manera que se facilite la adquisición y recarga de los tags; además nos preocupamos de brindar el servicio con nuestros puntos móviles 
           que nos permiten acercar a los sitios donde ustedes como usuarios nos necesitan.</p>
         </div>
         </Col>
@@ -55,7 +52,7 @@ const Nosotros = () => {
             <div className="h3Title">
               <h5>Visión</h5>
             </div>
-            <p className="serviceText">Ser la mejor empresa en ofrecer soluciones y servicios con innovación y calidad</p>
+            <p className="nostrosText" style={{fontFamily:"Helvetica"}}>Ser la mejor empresa en ofrecer soluciones y servicios con innovación y calidad</p>
           </Col>
           <Col sm="3" className="card-style ml-5">
           <img src={valores} alt="Suppliers"></img>
@@ -64,7 +61,7 @@ const Nosotros = () => {
             </div>
             <ul className="ulMision">
               <li>Actuamos con honestidad y transparencia </li> 
-              <li>Ofrecemos calidad en nuestro producto y servicio, generando </li> 
+              <li>Ofrecemos calidad en nuestro producto y servicio</li> 
               <li>Trabajamos con pasión </li>
               <li>Generamos competitividad buscando la excelencia</li>
               <li>Creamos herramientas para facilitar el servicio a nuestros clientes </li>

@@ -1,6 +1,6 @@
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../../../../Assets/banner1.jpg");
-  height: 550px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../../../../Assets/banner8_correct.jpg");
+  height: 400px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;

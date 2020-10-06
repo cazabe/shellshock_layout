@@ -11,10 +11,15 @@ import {
 } from "reactstrap";
 import "./container.css";
 import oficinaTag from "../../../../Assets/oficinaTag.jpeg";
-import edif from "../../../../Assets/edidifico_consejo.jpg";
 import logoTaxExpress from "../../../../Assets/logo-sin-fondo-tag-express.png";
 import pagotipo from "../../../../Assets/banner2.jpg";
 import puntoInter from "../../../../Assets/puntoIntervalles.png";
+import banner7 from "../../../../Assets/banner7.jpg";
+import banner6 from "../../../../Assets/banner6.jpg";
+import banner3 from "../../../../Assets/banner3.jpg";
+import banner10 from "../../../../Assets/banner10.jpg";
+import peajeAloag from "../../../../Assets/peajeAloag.jpeg";
+import Parrallax from "../Parallax/Parallax";
 
 const ContainerComponent = () => {
   return (
@@ -34,7 +39,7 @@ const ContainerComponent = () => {
               <h5>AUTOPISTA GENERAL RUMIÑAHUI</h5>
             </div>
             <p className="serviceText">
-              En el peaje Autopista General Rumiñahui
+              En el Peaje Autopista General Rumiñahui
             </p>
           </Col>
           <Col sm="3" className="card-style ml-5">
@@ -42,14 +47,14 @@ const ContainerComponent = () => {
             <div>
               <h5>PEAJE INTERVALLES</h5>
             </div>
-            <p className="serviceText">Av. Intervalles, peaje intervalles</p>
+            <p className="serviceText">Av. Intervalles, Peaje Intervalles</p>
           </Col>
           <Col sm="3" className="card-style ml-5">
-            <img src={edif} alt="Suppliers"></img>
+            <img src={peajeAloag} alt="Suppliers"></img>
             <div className="h3Title">
-              <h5>EDIFICIO CONCEJO PROVINCIAL</h5>
+              <h5>PEAJE ALÓAG</h5>
             </div>
-            <p className="serviceText">Juan Larrea, Quito 170103</p>
+            <p className="serviceText">Vía Alóag Santo Domingo, Peaje Alóag</p>
           </Col>
         </Row>
 
@@ -63,7 +68,7 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6">
               <img
-                src={pagotipo}
+                src={banner7}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -71,13 +76,13 @@ const ContainerComponent = () => {
             <Col md="6" className="text_card_info">
               <h2>BENEFICIOS</h2>
               <h6>SALUD, SEGURIDAD Y OPTIMIZACIÓN DEL TIEMPO</h6>
-              <ul style={{ "line-height": "1.5rem" }}>
+              <ul style={{ "lineHeight": "1.5rem" }}>
                 <li>
                   Disminución de tiempos en cola en las estaciones de peaje.
                 </li>
                 <li>
                   Permite llevar una Gestión de Cuenta, es decir puedes
-                  verificar el histórico de pasadas del vehiculo o flota.
+                  verificar el histórico de pasadas del vehículo o flota.
                 </li>
                 <li>
                   Seguridad y control del vehículo o de la flota al verificar
@@ -93,11 +98,11 @@ const ContainerComponent = () => {
             <Col md="6" className="text_card_info">
               <h2>BENEFICIOS</h2>
               <h6>
-                RAZONES POR LAS CUALES PREFERIR Y ADQUIRIR TU{" "}
+                RAZONES POR LAS CUÁLES PREFERIR Y ADQUIRIR TU{" "}
                 <strong>TAGEXPRESS</strong>:
               </h6>
-              <ul style={{ "line-height": "1.5rem" }}>
-                <li>Calidad y confiavilidad</li>
+              <ul style={{ "lineHeight": "1.5rem" }}>
+                <li>Calidad y confiabilidad</li>
                 <li>No son clonables.</li>
                 <li>No son transferibles.</li>
                 <li>Brindan seguridad.</li>
@@ -106,7 +111,7 @@ const ContainerComponent = () => {
             </Col>
             <Col md="6">
               <img
-                src={pagotipo}
+                src={banner6}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -118,7 +123,7 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6">
               <img
-                src={pagotipo}
+                src={banner3}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -128,11 +133,11 @@ const ContainerComponent = () => {
                 PASOS PARA COLOCAR TU <strong>TAG EXPRESS</strong>
               </h2>
               <h6>USARLO ES FÁCIL Y PRÁCTICO, AQUÍ LOS 4 SIMPLES PASOS:</h6>
-              <ol style={{ "line-height": "1.5rem" }}>
-                <li>Despegar lentamente el dispositivo.</li>
-                <li>Colocarlo en el parabrisas a unos 15cm del borde superior</li>
+              <ol style={{ "lineHeight": "1.5rem" }}>
+                <li>Despega lentamente el tag del adhesivo blanco.</li>
+                <li>Coloca en el parabrisas 15cm del borde superior, tras el retrovisor</li>
                 <li>Presiona bien el dispositivo al momento de pegarlo.</li>
-                <li>El dispositivo autoadhesivo debe pegarse siempre con la cara impresa</li>
+                <li>Recuerda que tu tag debes colocarlo en la parte interna del vehículo</li>
               </ol>
             </Col>
           </Row>
@@ -142,10 +147,10 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6" className="text_card_info">
               <h2>
-               PORQUE PREFERIRNOS
+               POR QUÉ PREFERIRNOS
               </h2>
               <h6>TENEMOS VARIOS BENEFICIOS PARA TI</h6>
-              <ul style={{ "line-height": "1.5rem" }}>
+              <ul style={{ "lineHeight": "1.5rem" }}>
                 <li>Es un tag de alta calidad y confiabilidad.</li>
                 <li>La potencia de su lectura permite que sea detectado sin inconvenientes cuando el vehículo cruza una estación de peaje </li>
                 <li>Evita que seas un evasor de peaje y que seas sancionado con el 15% de un SBU según el COIP Art. 390 numeral 2</li>
@@ -153,7 +158,7 @@ const ContainerComponent = () => {
             </Col>
             <Col md="6">
               <img
-                src={pagotipo}
+                src={banner10}
                 alt="Suppliers"
                 style={{ height: "230px", width: "100%" }}
               ></img>
@@ -170,12 +175,12 @@ const ContainerComponent = () => {
                 style={{ height: "230px", width: "100%" }}
               ></img>
             </Col>
-            <Col md="6" className="text_card_info">
+            <Col md="6" className="text_card_info pt-5">
               <h2>
                 FORMAS DE PAGO <strong>TAG EXPRESS</strong>
               </h2>
-              <h6>ESCOGE LA QUE MAS TE GUSTE</h6>
-              <ul style={{ "line-height": "1.5rem" }}>
+              <h6>ESCOGE LA QUE MÁS TE CONVENGA</h6>
+              <ul style={{ "lineHeight": "1.5rem" }}>
                 <li>Efectivo</li>
                 <li>Transferencia</li>
               </ul>
@@ -186,6 +191,7 @@ const ContainerComponent = () => {
         {/* <div className="banner2">
               <img src={pagotipo} alt="banner2"/>
         </div> */}
+        
 
         <section>
           <h2 className="subtitle_section">GRACIAS A NUESTRA GESTIÓN</h2>
@@ -205,6 +211,8 @@ const ContainerComponent = () => {
             </Col>
           </Row>
         </section>
+
+        <Parrallax/>
 
         <section id="contacto">
           <h1 className="subtitle_section">Contacto</h1>
@@ -276,9 +284,9 @@ const ContainerComponent = () => {
                       requisitos que soliciten, es importante contar con:
                     </p>
                     <ul>
-                      <li>matrícula del vehículo para revisar sus datos</li>
-                      <li>Cédula del propietario</li>
-                      <li>del vehículo Valor para recarga</li>
+                      <li>Matrícula del vehículo para revisar sus datos</li>
+                      <li>Cédula del propietario del vehículo</li>
+                      <li>Valor para recarga</li>
                     </ul>
                   </CardBody>
                 </Card>
@@ -292,7 +300,7 @@ const ContainerComponent = () => {
                 id="toggler2"
                 style={{ marginBottom: "1rem" }}
               >
-                ¿En que Estaciones de peaje puedo utilizar{" "}
+                ¿En qué estaciones de peaje puedo utilizar{" "}
                 <strong>TAG EXPRESS</strong>?
               </Button>
               <UncontrolledCollapse toggler="#toggler2">
@@ -316,10 +324,9 @@ const ContainerComponent = () => {
                         Peajes de <strong>PANAVIAL</strong>
                       </li>
                       <li>Peaje de Santo Domingo</li>
-                      <li>Peaje Río 7 en el Sur del país</li>
-                      <li>Peaje Vía a la Costa</li>
+                      <li>Peaje Río 7 Huaquillas</li>
+                      <li>Peaje Vía a la Costa - Guayas</li>
                       <li>Peaje de Manabí</li>
-                      <li>Peaje en Machala</li>
                     </ul>
                   </CardBody>
                 </Card>
@@ -333,7 +340,7 @@ const ContainerComponent = () => {
                 id="toggler3"
                 style={{ marginBottom: "1rem" }}
               >
-                ¿Tiene algun costo homologar mi <strong>TAG EXPRESS</strong>?
+                ¿Tiene algún costo homologar mi <strong>TAG EXPRESS</strong>?
               </Button>
               <UncontrolledCollapse toggler="#toggler3">
                 <Card>
