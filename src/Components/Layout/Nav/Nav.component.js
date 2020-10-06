@@ -46,8 +46,7 @@ const NavComponent = () => {
           </Nav>
           <NavItem className="loginNavItem mr-3">
 
-            <Link to="/register">
-
+            <Link>
               <div className="btn btn-primary">
                 {/* <img className="loginIcon" src={loginIcon} /> */}
                  {/* to="/shellshock_layout/register" */}
@@ -56,7 +55,7 @@ const NavComponent = () => {
             </Link>
           </NavItem>
           <NavItem className="loginNavItem">
-            <Link to="/login">
+            <Link>
               <div className="btn btn-success">
                 {/* <img className="loginIcon" src={loginIcon} /> */}
                 {/* to="/shellshock_layout/login" */}
