@@ -10,10 +10,10 @@ const Routes = () => {
     <Router>
       <Nav />
       <Switch>
-      <Route path="/shellshock_layout/" exact component={ContainerComponent} />
-        <Route path="/shellshock_layout/login" exact component={Login} />
-        <Route path="/shellshock_layout/register" exact component={Register} />
-        <Route path="/shellshock_layout/nosotros" exact component={Nosotros} />
+      <Route path="/" exact component={ContainerComponent} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/register" exact component={Register} />
+        <Route path="/nosotros" exact component={Nosotros} />
       </Switch>
     </Router>
   );

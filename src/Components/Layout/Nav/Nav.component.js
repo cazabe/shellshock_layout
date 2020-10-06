@@ -22,7 +22,7 @@ const NavComponent = () => {
       <Navbar className="navTagexpress" color="light" light expand="md">
         
         <NavbarBrand>
-        <Link to="/shellshock_layout/">
+        <Link to="/">
           <img className="logoNav" src={logoTaxExpress} alt="logo" />
           </Link>
         </NavbarBrand>
@@ -39,13 +39,13 @@ const NavComponent = () => {
               <NavLink href="#preguntas">Preguntas frecuentes</NavLink>
             </NavItem>
             <NavItem>
-            <Link to="/shellshock_layout/nosotros">
+            <Link to="/nosotros">
             <NavLink>Conoce TagExpress</NavLink>
             </Link>
             </NavItem>
           </Nav>
           <NavItem className="loginNavItem mr-3">
-            <Link to="/shellshock_layout/register">
+            <Link to="/register">
               <div className="btn btn-primary">
                 {/* <img className="loginIcon" src={loginIcon} /> */}
                 <strong>Abrir cuenta</strong>
@@ -53,7 +53,7 @@ const NavComponent = () => {
             </Link>
           </NavItem>
           <NavItem className="loginNavItem">
-            <Link to="/shellshock_layout/login">
+            <Link to="/login">
               <div className="btn btn-success">
                 {/* <img className="loginIcon" src={loginIcon} /> */}
                 <strong>Acceso clientes</strong>
