@@ -237,7 +237,7 @@ const ContainerComponent = () => {
                   <strong>Correo:</strong>
                 </h2>
                 <p className="serviceText">
-                  servicioalclientecalprandina@tagexpress.club
+                  servicioalcliente@tagexpress.club
                 </p>
               </div>
             </Col>
