@@ -23,7 +23,7 @@ const FooterComponent = () => {
             <i style={{ padding: "0px" }} className="fa fa-envelope"></i>
             <p>
               <a href="mailto:support@eduonix.com">
-                servicioalclientecalprandina@tagexpress.club
+                servicioalcliente@tagexpress.club
               </a>
             </p>
           </div>
