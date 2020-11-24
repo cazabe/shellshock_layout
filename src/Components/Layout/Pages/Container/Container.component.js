@@ -19,7 +19,9 @@ import banner6 from "../../../../Assets/banner6.jpg";
 import banner3 from "../../../../Assets/banner3.jpg";
 import banner10 from "../../../../Assets/banner10.jpg";
 import peajeAloag from "../../../../Assets/peajeAloag.jpeg";
+
 import Parrallax from "../Parallax/Parallax";
+import ModalExample from "../modal/modal";
 
 const ContainerComponent = () => {
   return (
@@ -32,6 +34,7 @@ const ContainerComponent = () => {
             <img className="logoNav" src={logoTaxExpress} alt="logo" />
           </h1>
         </div>
+        <ModalExample/>
         <Row md="12" className="brandImg" id="puntosVentas">
           <Col sm="3" className="card-style" style={{ marginLeft: "100px" }}>
             <img src={oficinaTag} alt="Suppliers"></img>
@@ -147,7 +150,7 @@ const ContainerComponent = () => {
           <Row md="12" className="brandImg" id="puntosVentas">
             <Col md="6" className="text_card_info">
               <h2>
-               POR QUÉ PREFERIRNOS
+                POR QUÉ PREFERIRNOS
               </h2>
               <h6>TENEMOS VARIOS BENEFICIOS PARA TI</h6>
               <ul style={{ "lineHeight": "1.5rem" }}>
@@ -187,11 +190,11 @@ const ContainerComponent = () => {
             </Col>
           </Row>
         </div>
-        
+
         {/* <div className="banner2">
               <img src={pagotipo} alt="banner2"/>
         </div> */}
-        
+
 
         <section>
           <h2 className="subtitle_section">GRACIAS A NUESTRA GESTIÓN</h2>
@@ -212,7 +215,7 @@ const ContainerComponent = () => {
           </Row>
         </section>
 
-        <Parrallax/>
+        <Parrallax />
 
         <section id="contacto">
           <h1 className="subtitle_section">Contacto</h1>
@@ -231,6 +234,7 @@ const ContainerComponent = () => {
                   <strong>Télefonos:</strong>
                 </h2>
                 <p className="serviceText">098-558-7634</p>
+                <p className="serviceText">022600686</p>
               </div>
               <div className="progress-bar-item">
                 <h2>
