@@ -19,7 +19,7 @@ const ModalExample = (props) => {
   return (
     <div>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>PROMOCIÓN POR BLACK FRIDAY</ModalHeader>
+        <ModalHeader style={{"padding-left" : "90px"}} toggle={toggle}>PROMOCIÓN POR BLACK FRIDAY</ModalHeader>
         <ModalBody>
          <img src={blackFRiday} style={{height:580}}/>
         </ModalBody>
