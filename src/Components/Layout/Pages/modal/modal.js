@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import blackFRiday from "../../../../Assets/blackFRiday.jpeg";
+import blackFRiday from "../../../../Assets/blackfridaynew.jpeg";
 
 const ModalExample = (props) => {
   const {
