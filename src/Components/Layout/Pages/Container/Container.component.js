@@ -34,7 +34,7 @@ const ContainerComponent = () => {
             <img className="logoNav" src={logoTaxExpress} alt="logo" />
           </h1>
         </div>
-        <ModalExample/>
+        {/* <ModalExample/> */}
         <Row md="12" className="brandImg" id="puntosVentas">
           <Col sm="3" className="card-style" style={{ marginLeft: "100px" }}>
             <img src={oficinaTag} alt="Suppliers"></img>
