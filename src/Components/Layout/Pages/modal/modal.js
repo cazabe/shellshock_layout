@@ -4,7 +4,6 @@ import blackFRiday from "../../../../Assets/blackfridaynew.jpeg";
 
 const ModalExample = (props) => {
   const {
-    buttonLabel,
     className
   } = props;
 
@@ -21,7 +20,7 @@ const ModalExample = (props) => {
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader style={{"paddingLeft" : "90px"}} toggle={toggle}>PROMOCIÓN POR BLACK FRIDAY</ModalHeader>
         <ModalBody>
-         <img src={blackFRiday} style={{height:580}}/>
+         <img src={blackFRiday} style={{height:580}} alt="blackfriday promotion"/>
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggle}>Cerrar</Button>

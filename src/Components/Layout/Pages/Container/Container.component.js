@@ -21,7 +21,7 @@ import banner10 from "../../../../Assets/banner10.jpg";
 import peajeAloag from "../../../../Assets/peajeAloag.jpeg";
 
 import Parrallax from "../Parallax/Parallax";
-import ModalExample from "../modal/modal";
+// import ModalExample from "../modal/modal";
 
 const ContainerComponent = () => {
   return (
