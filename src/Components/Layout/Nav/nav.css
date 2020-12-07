@@ -29,6 +29,8 @@ a {
   background-color: #FFDD00;
   color: #14213d !important;
   padding: 11px;
+  padding-left: 24px;
+  padding-right: 24px;
   text-decoration: none;
 }
 
@@ -54,4 +56,20 @@ a {
   text-decoration: none;
 }
 
+/*responsive*/
+@media only screen and (max-width:  600px){
+  .centerLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .logoNav {
+    height: auto;
+  }
+}
+
+
+
 /*# sourceMappingURL=nav.css.map */
+

@@ -117,5 +117,19 @@ button.faq{
   font-size: 28px;
 }
 
+.centerImgTag {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/*responsive logo*/
+@media only screen and (max-width:  600px){
+  .centerImgTag {
+    width: 100%;
+  }
+}
+
 
 

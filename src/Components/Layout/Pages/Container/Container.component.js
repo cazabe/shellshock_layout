@@ -29,10 +29,8 @@ const ContainerComponent = () => {
       <HeroImg />
       <Container>
         <div>
-          <h1 className="subtitle_section">
-            Puntos de venta{" "}
-            <img className="logoNav" src={logoTaxExpress} alt="logo" />
-          </h1>
+            <img className="centerImgTag" src={logoTaxExpress} alt="logo" />
+            <h1 className="subtitle_section">Puntos de venta</h1>
         </div>
         {/* <ModalExample/> */}
         <Row md="12" className="brandImg" id="puntosVentas">
@@ -62,9 +60,7 @@ const ContainerComponent = () => {
         </Row>
 
         <div className="tag_express_sub">
-          <h1 className="subtitle_section">
-            <img className="logoNav" src={logoTaxExpress} alt="logo" />
-          </h1>
+            <img className="centerImgTag" src={logoTaxExpress} alt="logo" />
         </div>
 
         <div className="card1">

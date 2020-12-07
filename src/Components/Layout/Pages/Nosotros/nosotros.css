@@ -44,4 +44,15 @@
   ul.ulMision{
     line-height: 1.5rem;
   }
+
+  /*responsive desighn*/
+  @media only screen and (max-width:  600px){
+    .hero-image2 {
+      max-width: 100%;
+      height: 100px;
+    }
+    .brandImg img{
+      height: auto!important;
+    }
+  }
   

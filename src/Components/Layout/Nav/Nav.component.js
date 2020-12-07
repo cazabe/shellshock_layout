@@ -23,7 +23,7 @@ const NavComponent = () => {
         
         <NavbarBrand>
         <Link to="/">
-          <img className="logoNav" src={logoTaxExpress} alt="logo" />
+          <img className="logoNav centerLogo" src={logoTaxExpress} alt="logo" />
           </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
