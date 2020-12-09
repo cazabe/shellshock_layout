@@ -33,12 +33,12 @@ const FooterComponent = () => {
         <Row md="12">
           <Col sm="4">
             
-            <a href="#" className="fa fa-facebook"></a>
+            <a href="https://www.facebook.com/TagExpressEcuador" target="_blank" className="fa fa-facebook"></a>
            
           </Col>
           <Col sm="4">
          
-          <a href="#" className="fa fa-instagram"></a>
+          <a href="https://www.instagram.com/tag.express.ecuador/" target="_blank" className="fa fa-instagram"></a>
           
           </Col>
           <Col sm="4">
