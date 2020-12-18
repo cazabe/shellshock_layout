@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import api from '../../../../services/api';
 import { Button, Form, FormGroup, Label, Input,Row, Col } from 'reactstrap';
 import Container from 'reactstrap/lib/Container';
 import './form.style.css';
@@ -12,18 +13,19 @@ import cincoEjes from '../../../../Assets/cinco_ejes-removebg-preview.png';
 import seisEjes from '../../../../Assets/seis_ejes-removebg-preview.png';
 
 
+
 const FormTag = () => {
     //state for form
-    const[aloag, setAloag] = useState("");
-    const[conorte, setConorte] = useState("");
-    const[consegua, setConsegua] = useState("");
-    const[pan, setPan] = useState("");
-    const[nombres, setNombres] = useState("");
-    const[apellidos, setApellidos] = useState("");
+    const[concesion1, setconcesion1] = useState("");
+    const[concesion2, setconcesion2] = useState("");
+    const[concesion3, setconcesion3] = useState("");
+    const[concesion4, setconcesion4] = useState("");
+    const[nombre, setNombre] = useState("");
+    const[apellido, setApellido] = useState("");
     const[cedula, setCedula] = useState("");
     const[telefono, setTelefono] = useState("");
-    const[email, setEmail] = useState("");
-    const[cedulaImg, setCedulaImg] = useState("");
+    const[correo, setCorreo] = useState("");
+    const[fotocedula, setFotocedula] = useState("");
     //car
     const[placa, setPLaca] = useState("");
     const[marca, setMarca] = useState("");
@@ -32,35 +34,54 @@ const FormTag = () => {
     //axis
     const[ejes, setEjes] = useState("");
     //tag
-    const[numTag, setNumTag] = useState("");
+    const[numtag, setNumTag] = useState("");
     const[fotoTag, setFotoTag] = useState("");
     //data object
     const[tagAccount, setTagAccount] = useState({});
     
     //submit form func
-    const handleSubmit = (e)=>{
+    const handleSubmit = async (e)=>{
         e.preventDefault();
-        const actTag = {
-            aloag,
-            conorte,
-            consegua,
-            pan,
-            nombres,
-            apellidos,
-            cedula,
-            telefono,
-            email,
-            cedulaImg,
-            placa,
-            marca,
-            modelo,
-            color,
-            ejes,
-            numTag,
-            fotoTag
+
+        const formTagData = new FormData();
+
+        formTagData.append("concesion1", concesion1);
+        formTagData.append("concesion2", concesion2);
+        formTagData.append("concesion3", concesion3);
+        formTagData.append("concesion4", concesion4);
+        formTagData.append("nombre", nombre);
+        formTagData.append("apellido", apellido);
+        formTagData.append("cedula", cedula);
+        formTagData.append("telefono", telefono);
+        formTagData.append("correo", correo);
+        formTagData.append("fotocedula", fotocedula);
+        formTagData.append("placa", placa);
+        formTagData.append("marca", marca);
+        formTagData.append("modelo", modelo);
+        formTagData.append("color", color);
+        formTagData.append("ejes", ejes);
+        formTagData.append("numtag", numtag);
+        formTagData.append("fotoTag", fotoTag);
+       
+
+        console.log("object: " , formTagData);
+        console.log("file img: ", fotocedula);
+
+        try {
+            const response = await api.post('/form/create',formTagData);
+            
+            if(response){
+                // window.location.href = '/';
+                console.log("formulario guardado")
+            }else{
+                console.log("Problemas al guardar usuario");
+            }
+            // setTagAccount(actTag);
+        } catch (error) {
+            console.log(error);
         }
-        console.log(aloag, conorte, consegua);
-        setTagAccount(actTag);
+
+        
     }
 
     console.log(tagAccount);
@@ -79,7 +100,7 @@ const FormTag = () => {
                     <Label check>
                         <Input type="checkbox" 
                         value="aloag"
-                        onChange={(e)=>{setAloag(e.target.value)}}
+                        onChange={(e)=>{setconcesion1(e.target.value)}}
                         />{' '}<p>Peaje Alóag</p>
                     </Label>
                 </FormGroup>
@@ -89,7 +110,7 @@ const FormTag = () => {
                         <Input 
                         type="checkbox" 
                         value="conorte"
-                        onChange={(e)=>{setConorte(e.target.value)}}
+                        onChange={(e)=>{setconcesion2(e.target.value)}}
                         />{' '}
                         <p>Peajes CONORTE S.A. (Chivería, Yahuachi, Daule, Samborondón, La Cadena,Colimes, Guayas Norte)</p>
                     </Label>
@@ -99,7 +120,7 @@ const FormTag = () => {
                     <Label check>
                         <Input type="checkbox" 
                         value="concegua"
-                        onChange={(e)=>{setConsegua(e.target.value)}}
+                        onChange={(e)=>{setconcesion3(e.target.value)}}
                         />{' '}
                         <p>Peajes CONCEGUA S.A. (Boliche,Tambo,Milagro, El Triunfo, Naranjal,Naranjito)</p>
                     </Label>
@@ -110,7 +131,7 @@ const FormTag = () => {
                         <Input 
                         type="checkbox" 
                         value="el pan"
-                        onChange={(e)=>{setPan(e.target.value)}}
+                        onChange={(e)=>{setconcesion4(e.target.value)}}
                         />{' '}
                         <p>Peaje PAN (El Pan)</p>
                     </Label>
@@ -124,7 +145,7 @@ const FormTag = () => {
                     type="text" 
                     name="nombres" 
                     placeholder="Ingrese sus nombres" 
-                    onChange={(e)=>{setNombres(e.target.value)}}
+                    onChange={(e)=>{setNombre(e.target.value)}}
                     />
                 </FormGroup>
 
@@ -134,7 +155,7 @@ const FormTag = () => {
                     type="text" 
                     name="apellidos" 
                     placeholder="Ingrese sus apellidos"
-                    onChange={(e)=>{setApellidos(e.target.value)}}
+                    onChange={(e)=>{setApellido(e.target.value)}}
                     />
                 </FormGroup>
 
@@ -164,13 +185,13 @@ const FormTag = () => {
                     type="email" 
                     name="email" 
                     placeholder="Ingrese su correo" 
-                    onChange={(e)=>{setEmail(e.target.value)}}
+                    onChange={(e)=>{setCorreo(e.target.value)}}
                     />
                 </FormGroup>
 
                 <FormGroup className="mb-4">
                     <Label for="examplePassword">Imagen de cedula</Label>
-                    <Input type="file" name="cedulafoto"/>
+                    <Input type="file"  onChange={(e)=> setFotocedula(e.target.files[0])}/>
                 </FormGroup>
 
                 <h5 className="text-left">DATOS VEHÍCULO (consta en la matrícula) ANTE EL INTENTO DE FRAUDE SERÁ ELIMINADO</h5>
@@ -227,7 +248,7 @@ const FormTag = () => {
                             <Input 
                             type="radio" 
                             name="radio1"
-                            value="un-eje" 
+                            value="un eje" 
                             onChange={(e)=>{setEjes(e.target.value)}}
                             />{' '}
                         <p>Referencia a vehículo con un eje</p>
@@ -243,7 +264,7 @@ const FormTag = () => {
                                 <Input 
                                 type="radio" 
                                 name="radio2" 
-                                value="dos-ejes"
+                                value="dos ejes"
                                 onChange={(e)=>{setEjes(e.target.value)}}
                                 />{' '}
                            <p> Referencia a vehículo con dos ejes</p>
@@ -258,7 +279,7 @@ const FormTag = () => {
                                 <Input 
                                 type="radio" 
                                 name="radio3" 
-                                value="tres-ejes"
+                                value="tres ejes"
                                 onChange={(e)=>{setEjes(e.target.value)}}
                                 />{' '}
                                 <p>Referencia a vehículo con tres ejes</p>
@@ -277,7 +298,7 @@ const FormTag = () => {
                                 <Input 
                                 type="radio" 
                                 name="radio4" 
-                                value="cuatro-ejes"
+                                value="cuatro ejes"
                                 onChange={(e)=>{setEjes(e.target.value)}}
                                 />{' '}
                                 <p>Referencia a vehículo con cuatro ejes</p>
@@ -292,7 +313,7 @@ const FormTag = () => {
                                 <Input 
                                 type="radio" 
                                 name="radio5" 
-                                value="cinco-ejes"
+                                value="cinco ejes"
                                 onChange={(e)=>{setEjes(e.target.value)}}
                                 />{' '}
                                 <p>Referencia a vehículo con cinco ejes</p>
@@ -307,7 +328,7 @@ const FormTag = () => {
                                 <Input 
                                 type="radio" 
                                 name="radio6" 
-                                value="seis-ejes"
+                                value="seis ejes"
                                 onChange={(e)=>{setEjes(e.target.value)}}
                                 />{' '}
                                 <p>Referencia a vehículo con seis ejes</p>
