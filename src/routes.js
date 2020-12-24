@@ -6,6 +6,7 @@ import Nav from "./Components/Layout/Nav/Nav.component";
 import Nosotros from "./Components/Layout/Pages/Nosotros/Nosotros";
 import ContainerComponent from "./Components/Layout/Pages/Container/Container.component";
 import FormTag from "./Components/Layout/Pages/form/Form.component";
+import FormEmp from "./Components/Layout/Pages/form_emp/FormEmp"
 const Routes = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const Routes = () => {
         <Route path="/register" exact component={Register} />
         <Route path="/nosotros" exact component={Nosotros} />
         <Route path="/formtags" exact component={FormTag} />
+        <Route path="/formemp" exact component={FormEmp}/>
       </Switch>
     </Router>
   );

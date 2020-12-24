@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import api from '../../../../services/api';
 import { Button, Form, FormGroup, Label, Input,Row, Col } from 'reactstrap';
 import Container from 'reactstrap/lib/Container';
-import './form.style.css';
+import './formEmp.style.css';
 
 //images
 import unEje from '../../../../Assets/un_eje-removebg-preview.png';
@@ -14,7 +14,7 @@ import seisEjes from '../../../../Assets/seis_ejes-removebg-preview.png';
 
 
 
-const FormTag = () => {
+const FormEmp = () => {
     //state for form
     const[concesion1, setconcesion1] = useState("");
     const[concesion2, setconcesion2] = useState("");
@@ -364,4 +364,4 @@ const FormTag = () => {
     );
 }
 
-export default FormTag;
+export default FormEmp;
