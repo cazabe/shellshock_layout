@@ -4,6 +4,7 @@ import logoTagExpress from "../../../Assets/logo-sin-fondo-tag-express.png";
 import "./footer.style.css";
 
 const FooterComponent = () => {
+  
   return (
     // Footer
     <footer className="footer-distributed">
