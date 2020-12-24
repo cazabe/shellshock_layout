@@ -20,9 +20,9 @@ const FormEmp = () => {
     const[concesion2, setconcesion2] = useState("");
     const[concesion3, setconcesion3] = useState("");
     const[concesion4, setconcesion4] = useState("");
-    const[nombre, setNombre] = useState("");
-    const[apellido, setApellido] = useState("");
-    const[cedula, setCedula] = useState("");
+    const[nomrazonsocial, setNomRazonSocial] = useState("");
+    const[nomreplegal, setNomRepLegal] = useState("");
+    const[ruc, setRuc] = useState("");
     const[telefono, setTelefono] = useState("");
     const[correo, setCorreo] = useState("");
     const[fotocedula, setFotocedula] = useState("");
@@ -49,9 +49,9 @@ const FormEmp = () => {
         formTagData.append("concesion2", concesion2);
         formTagData.append("concesion3", concesion3);
         formTagData.append("concesion4", concesion4);
-        formTagData.append("nombre", nombre);
-        formTagData.append("apellido", apellido);
-        formTagData.append("cedula", cedula);
+        formTagData.append("nomrazonsocial", nomrazonsocial);
+        formTagData.append("nomreplegal", nomreplegal);
+        formTagData.append("ruc", ruc);
         formTagData.append("telefono", telefono);
         formTagData.append("correo", correo);
         formTagData.append("fotocedula", fotocedula);
@@ -68,13 +68,13 @@ const FormEmp = () => {
         console.log("file img: ", fotocedula);
 
         try {
-            const response = await api.post('/form/create',formTagData);
+            const response = await api.post('/form/create-empresa',formTagData);
             
             if(response){
                 // window.location.href = '/';
-                console.log("formulario guardado")
+                console.log("formulario guardado empresa")
             }else{
-                console.log("Problemas al guardar usuario");
+                console.log("Problemas al guardar el vehiculo de empresa");
             }
             // setTagAccount(actTag);
         } catch (error) {
@@ -88,7 +88,7 @@ const FormEmp = () => {
 
     return (
         <Container>
-            <h1 className="text-center">FORMULARIO PARA ACTIVACIÓN U HOMOLOGACIÓN DEL TAG (PERSONA NATURAL)</h1>
+            <h1 className="text-center">FORMULARIO PARA ACTIVACIÓN U HOMOLOGACIÓN DEL TAG (EMPRESAS)</h1>
             <h2 className="text-center">Si adquirió el tag o ya dispone de otra estación de peaje llene los siguientes campos:</h2>
             
             <Form onSubmit={handleSubmit} encType="multipart/form-data">
@@ -135,40 +135,40 @@ const FormEmp = () => {
                     </Label>
                 </FormGroup>
 
-                <h5 className="text-left">DATOS PERSONA NATURAL (propietario del vehículo según matrícula) </h5>
+                <h5 className="text-left">DATOS PERSONA JURÍDICA (empresas)</h5>
 
                 <FormGroup>
-                    <Label for="exampleEmail">Nombres</Label>
+                    <Label for="exampleEmail">Razón social</Label>
                     <Input 
                     type="text" 
-                    name="nombres" 
-                    placeholder="Ingrese sus nombres" 
-                    onChange={(e)=>{setNombre(e.target.value)}}
+                    name="nombre" 
+                    placeholder="Ingrese el nombre de la empresa" 
+                    onChange={(e)=>{setNomRazonSocial(e.target.value)}}
                     />
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="examplePassword">Apellidos</Label>
+                    <Label for="examplePassword">Nombre del Representante Legal:</Label>
                     <Input 
                     type="text" 
-                    name="apellidos" 
-                    placeholder="Ingrese sus apellidos"
-                    onChange={(e)=>{setApellido(e.target.value)}}
+                    name="representante" 
+                    placeholder="Ingrese el nombre del representante legal"
+                    onChange={(e)=>{setNomRepLegal(e.target.value)}}
                     />
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="examplePassword">C.I</Label>
+                    <Label for="examplePassword">Ruc</Label>
                     <Input 
                     type="text" 
-                    name="cedula" 
-                    placeholder="Ingrese su cedula" 
-                    onChange={(e)=>{setCedula(e.target.value)}}
+                    name="ruc" 
+                    placeholder="Ingrese el ruc de la empresa" 
+                    onChange={(e)=>{setRuc(e.target.value)}}
                     />
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="examplePassword">Teléfono</Label>
+                    <Label for="examplePassword">Teléfono convencional o celular</Label>
                     <Input 
                     type="text" 
                     name="telefono" 
@@ -188,7 +188,7 @@ const FormEmp = () => {
                 </FormGroup>
 
                 <FormGroup className="mb-4">
-                    <Label for="examplePassword">Suba una foto clara o escanee anverso y reverso de la cédula</Label>
+                    <Label for="examplePassword">Suba una foto clara de anverso y reverso de la cédula del representante legal</Label>
                     <Input type="file"  onChange={(e)=> setFotocedula(e.target.files[0])}/>
                 </FormGroup>
 

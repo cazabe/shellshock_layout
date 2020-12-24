@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import api from '../../../../services/api';
 import { Button, Form, FormGroup, Label, Input,Row, Col } from 'reactstrap';
 import Container from 'reactstrap/lib/Container';
@@ -91,6 +92,11 @@ const FormTag = () => {
             <h1 className="text-center">FORMULARIO PARA ACTIVACIÓN U HOMOLOGACIÓN DEL TAG (PERSONA NATURAL)</h1>
             <h2 className="text-center">Si adquirió el tag o ya dispone de otra estación de peaje llene los siguientes campos:</h2>
             
+            <div className="mt-4 mb-4">
+            <p>Si desea activar el TAG para empresa de click en el boton Formulario empresa</p>
+            <Link to="/formemp"><Button className="btn btn-info">Formulario empresa</Button></Link>
+            </div>
+
             <Form onSubmit={handleSubmit} encType="multipart/form-data">
                 <h2 className="text-left">ACTIVAR TAG EN:</h2>
 
