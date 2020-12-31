@@ -8,6 +8,7 @@ import ContainerComponent from "./Components/Layout/Pages/Container/Container.co
 import FormTag from "./Components/Layout/Pages/form/Form.component";
 import FormEmp from "./Components/Layout/Pages/form_emp/FormEmp"
 import ClientDashboard from "./Components/Layout/Pages/client_dashboard/ClientDashboard";
+import FormResponse from "./Components/Layout/Pages/formResponse/FormResponse";
 const Routes = () => {
 
   return (
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route path="/formtags" exact component={FormTag} />
         <Route path="/formemp" exact component={FormEmp}/>
         <Route path="/dashboard" exact component={ClientDashboard}/>
+        <Route path="/response" exact component={FormResponse}/>
       </Switch>
     </Router>
   );

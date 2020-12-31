@@ -15,7 +15,7 @@ import seisEjes from '../../../../Assets/seis_ejes-removebg-preview.png';
 
 
 
-const FormTag = () => {
+const FormTag = ({history}) => {
     //state for form
     const[concesion1, setconcesion1] = useState("");
     const[concesion2, setconcesion2] = useState("");
@@ -68,21 +68,24 @@ const FormTag = () => {
         console.log("object: " , formTagData);
         console.log("file img: ", fotocedula);
 
-        try {
-            const response = await api.post('/form/create',formTagData);
-            
-            if(response){
-                // window.location.href = '/';
-                console.log("formulario guardado")
-            }else{
-                console.log("Problemas al guardar usuario");
+        if(nombre !== "" && apellido !== "" && cedula !== "" && telefono !== "" && correo !== "" && fotocedula !== null && placa !== "" && marca !== "" &&  modelo !== "" && color !== "" && ejes !== "" && numtag !== "" && fototag !== null){
+            try {
+                const response = await api.post('/form/create',formTagData);
+                
+                if(response){
+                    // window.location.href = '/';
+                    console.log("formulario guardado");
+                    history.push('/response');
+                }else{
+                    console.log("Problemas al guardar usuario");
+                }
+                // setTagAccount(actTag);
+            } catch (error) {
+                console.log(error);
             }
-            // setTagAccount(actTag);
-        } catch (error) {
-            console.log(error);
-        }
-
-        
+        }else{
+            alert("Todos los campos son obligatorios");
+        }  
     }
 
     // console.log(tagAccount);
@@ -150,6 +153,7 @@ const FormTag = () => {
                     name="nombres" 
                     placeholder="Ingrese sus nombres" 
                     onChange={(e)=>{setNombre(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -160,6 +164,7 @@ const FormTag = () => {
                     name="apellidos" 
                     placeholder="Ingrese sus apellidos"
                     onChange={(e)=>{setApellido(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -170,6 +175,7 @@ const FormTag = () => {
                     name="cedula" 
                     placeholder="Ingrese su cedula" 
                     onChange={(e)=>{setCedula(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -180,6 +186,7 @@ const FormTag = () => {
                     name="telefono" 
                     placeholder="Ingrese su teléfono" 
                     onChange={(e)=>{setTelefono(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -190,12 +197,13 @@ const FormTag = () => {
                     name="email" 
                     placeholder="Ingrese su correo" 
                     onChange={(e)=>{setCorreo(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
                 <FormGroup className="mb-4">
                     <Label for="examplePassword">Suba una foto clara o escanee anverso y reverso de la cédula</Label>
-                    <Input type="file"  onChange={(e)=> setFotocedula(e.target.files[0])}/>
+                    <Input type="file"  onChange={(e)=> setFotocedula(e.target.files[0])} required />
                 </FormGroup>
 
                 <h5 className="text-left">DATOS VEHÍCULO (consta en la matrícula) ANTE EL INTENTO DE FRAUDE SERÁ ELIMINADO</h5>
@@ -207,6 +215,7 @@ const FormTag = () => {
                     name="placa" 
                     placeholder="Ingrese el placa del vehículo"
                     onChange={(e)=>{setPLaca(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -217,6 +226,7 @@ const FormTag = () => {
                     name="marca" 
                     placeholder="Ingrese el marca del vehículo"
                     onChange={(e)=>{setMarca(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -227,6 +237,7 @@ const FormTag = () => {
                     name="modelo" 
                     placeholder="Ingrese el modelo del vehículo" 
                     onChange={(e)=>{setModelo(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -237,6 +248,7 @@ const FormTag = () => {
                     name="color" 
                     placeholder="Ingrese el color del vehículo"
                     onChange={(e)=>{setColor(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
@@ -355,12 +367,13 @@ const FormTag = () => {
                     name="placa" 
                     placeholder="Ingrese el número impreso en el tag Ej. E200XXXXXXX"
                     onChange={(e)=>{setNumTag(e.target.value)}}
+                    required 
                     />
                 </FormGroup>
 
                 <FormGroup>
                     <Label for="exampleEmail">Suba una foto clara del tag</Label>
-                    <Input type="file" onChange={(e)=> setFotoTag(e.target.files[0])}/> 
+                    <Input type="file" onChange={(e)=> setFotoTag(e.target.files[0])} required /> 
                 </FormGroup>
             </FormGroup>
 

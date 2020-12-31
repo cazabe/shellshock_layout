@@ -14,7 +14,7 @@ import seisEjes from '../../../../Assets/seis_ejes-removebg-preview.png';
 
 
 
-const FormEmp = () => {
+const FormEmp = ({history}) => {
     //state for form
     const[concesion1, setconcesion1] = useState("");
     const[concesion2, setconcesion2] = useState("");
@@ -67,21 +67,24 @@ const FormEmp = () => {
         console.log("object: " , formTagData);
         console.log("file img: ", fotocedula);
 
-        try {
-            const response = await api.post('/form/create-empresa',formTagData);
-            
-            if(response){
-                // window.location.href = '/';
-                console.log("formulario guardado empresa")
-            }else{
-                console.log("Problemas al guardar el vehiculo de empresa");
+        if(nomrazonsocial !== "" && nomreplegal !== "" && ruc !== "" && telefono !== "" && correo !== "" && fotocedula !== null && placa !== "" && marca !== "" &&  modelo !== "" && color !== "" && ejes !== "" && numtag !== "" && fototag !== null){
+            try {
+                const response = await api.post('/form/create-empresa',formTagData);
+                
+                if(response){
+                    // window.location.href = '/';
+                    console.log("formulario guardado empresa");
+                    history.push('/response');
+                }else{
+                    console.log("Problemas al guardar el vehiculo de empresa");
+                }
+                // setTagAccount(actTag);
+            } catch (error) {
+                console.log(error);
             }
-            // setTagAccount(actTag);
-        } catch (error) {
-            console.log(error);
+        }else{
+            alert("Todos los datos del formulario son obligatorios");
         }
-
-        
     }
 
     // console.log(tagAccount);
@@ -144,6 +147,7 @@ const FormEmp = () => {
                     name="nombre" 
                     placeholder="Ingrese el nombre de la empresa" 
                     onChange={(e)=>{setNomRazonSocial(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -154,6 +158,7 @@ const FormEmp = () => {
                     name="representante" 
                     placeholder="Ingrese el nombre del representante legal"
                     onChange={(e)=>{setNomRepLegal(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -164,6 +169,7 @@ const FormEmp = () => {
                     name="ruc" 
                     placeholder="Ingrese el ruc de la empresa" 
                     onChange={(e)=>{setRuc(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -174,6 +180,7 @@ const FormEmp = () => {
                     name="telefono" 
                     placeholder="Ingrese su teléfono" 
                     onChange={(e)=>{setTelefono(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -184,12 +191,13 @@ const FormEmp = () => {
                     name="email" 
                     placeholder="Ingrese su correo" 
                     onChange={(e)=>{setCorreo(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
                 <FormGroup className="mb-4">
                     <Label for="examplePassword">Suba una foto clara de anverso y reverso de la cédula del representante legal</Label>
-                    <Input type="file"  onChange={(e)=> setFotocedula(e.target.files[0])}/>
+                    <Input type="file"  onChange={(e)=> setFotocedula(e.target.files[0])} required/>
                 </FormGroup>
 
                 <h5 className="text-left">DATOS VEHÍCULO (consta en la matrícula) ANTE EL INTENTO DE FRAUDE SERÁ ELIMINADO</h5>
@@ -201,6 +209,7 @@ const FormEmp = () => {
                     name="placa" 
                     placeholder="Ingrese el placa del vehículo"
                     onChange={(e)=>{setPLaca(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -211,6 +220,7 @@ const FormEmp = () => {
                     name="marca" 
                     placeholder="Ingrese el marca del vehículo"
                     onChange={(e)=>{setMarca(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -221,6 +231,7 @@ const FormEmp = () => {
                     name="modelo" 
                     placeholder="Ingrese el modelo del vehículo" 
                     onChange={(e)=>{setModelo(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -231,6 +242,7 @@ const FormEmp = () => {
                     name="color" 
                     placeholder="Ingrese el color del vehículo"
                     onChange={(e)=>{setColor(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
@@ -349,12 +361,13 @@ const FormEmp = () => {
                     name="placa" 
                     placeholder="Ingrese el número impreso en el tag Ej. E200XXXXXXX"
                     onChange={(e)=>{setNumTag(e.target.value)}}
+                    required
                     />
                 </FormGroup>
 
                 <FormGroup>
                     <Label for="exampleEmail">Suba una foto clara del tag</Label>
-                    <Input type="file" onChange={(e)=> setFotoTag(e.target.files[0])}/> 
+                    <Input type="file" onChange={(e)=> setFotoTag(e.target.files[0])} required/> 
                 </FormGroup>
             </FormGroup>
 
